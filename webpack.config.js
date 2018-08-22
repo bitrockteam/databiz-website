@@ -22,7 +22,7 @@ module.exports = {
   devtool: 'source-map',
 
   plugins: [
-    new FaviconsWebpackPlugin('./src/assets/logo.png'),
+    new FaviconsWebpackPlugin('./src/assets/dbz.png'),
 
     new HtmlWebpackPlugin({
       title: pkg.name,
@@ -40,7 +40,7 @@ module.exports = {
       start_url: '',
       icons: [
         {
-          src: path.resolve('src/assets/logo.png'),
+          src: path.resolve('src/assets/dbz.png'),
           sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
         }
       ]
@@ -66,22 +66,9 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
+          'css-loader',
           'sass-loader']
       }
     ]
-  },
-
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    watchContentBase: true,
-    watchOptions: {
-      poll: true
-    },
-    compress: true,
-    port: 4000,
-    host: 'localhost',
-    hot: true,
-    inline: true
   }
 }

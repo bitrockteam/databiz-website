@@ -1,6 +1,6 @@
 
 import './styles/main.css';
-import './libs/app';
+import './styles/app.scss';
 
 console.log('Project started...');
 
