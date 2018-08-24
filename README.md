@@ -1,67 +1,46 @@
-# basic-starter-kit
+# databiz-website
 
-[![Build Status](https://travis-ci.org/bitrock-frontend/basic-starter-kit.svg?branch=master)](https://travis-ci.org/bitrock-frontend/basic-starter-kit)
+<!-- [![Build Status](https://travis-ci.org/bitrock-frontend/basic-starter-kit.svg?branch=master)](https://travis-ci.org/bitrock-frontend/basic-starter-kit) -->
 
-Boilerplate for Bitrock frontend projects. It's a minimal configuration of a Webpack driven frameworkless project, with PWA compliance and a high Lighthouse score.
+## Requisites
+You need the following software installed in your machine in order to get started:
+* [Node.js](https://nodejs.org/en/) latest stable
+* [Yarn](https://yarnpkg.com/en/) package manager
+Both can be installed via Homebrew on MacOS & Linux environments.
 
-It's intended for:
-* demonstrate an implementation of our frontend styleguide
-* quick POC project
-* starting point for more advanced and/or opinionated projects
-
-### What's included
-* [Normalize.css](https://necolas.github.io/normalize.css/) & [Typebase.css](http://devinhunt.github.io/typebase.css/)
-* [AVA](https://github.com/avajs/ava) & [XO](https://github.com/xojs/xo)
-* [Cypress](https://www.cypress.io/)
-* Webpack
-  * CSS & SASS loaders
-  * dev-server
-  * HTML plugin
-  * PWA manifest plugin
-  * [Workbox](https://developers.google.com/web/tools/workbox/) plugin
-
-### How to use
-Clone the project (optionally ) and install dependencies
-
+## Create a local development environment
+Clone the repo locally
 ```bash
-$ git clone https://github.com/bitrock-frontend/basic-starter-kit my-project
-$ cd my-project && yarn
+$ git clone git@github.com:bitrockteam/databiz-website.git
 ```
 
-most of the project customization can be achieved via the `package.json` file
-```json
-{
-  ...
-  "displayName": "Starter kit",
-  "config": {
-    "themeColor": "#e74e0f"
-  },
-  "description": "Your next awesome project",
-  ...
-}
+Move on the folder and install dependencies with Yarn
+```bash
+$ cd databiz-website && yarn
 ```
 
-### Available NPM tasks
-Start the project in development mode (live reload)
+Start the development webserver on `localhost:8090`
 ```bash
 $ yarn start
 ```
 
-Create a static build in the `./dist` folder
-```bash
-$ yarn build
-```
+<!-- ## Development -->
 
-Run the tests
-```bash
-$ yarn test
-```
+## Branching policy
+This project follows a simple branching policy:
 
-Run the build action and deploy to GitHub pages 
-```bash
-$ yarn deploy
-```
+* `master` contains only stable code, and should not be updated directly
+* `development` where evolutive or experimental code is written
+* `gh-pages` where the distrubutable static files are deployed
+
+Do **NOT** merge directly `development` into `master`, always send a PR to have a review.
+
+<!-- ## Update & deploy
+Every time the `master` branch got updated (a direct commit or a merged PR) a new [Travis CI](https://travis-ci.org/bitrockteam/tech-radar) job is triggered and it composed basically of 2 steps:
+
+1. create new build of static files
+2. deploy the build folder into the related `gh-pages` branch -->
 
 
-### License
-Developed by Bitrock UI Engineering team, released under the [MIT license](LICENSE).
+## License
+Databiz Group internal use only.

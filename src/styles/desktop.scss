@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+
+  section {
+    article {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  section:nth-child(2n) {
+    article {
+      direction: rtl;
+    }
+  }
+
+}

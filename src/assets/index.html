@@ -8,18 +8,155 @@
   <meta name="theme-color" content="<%= htmlWebpackPlugin.options.color %>">
   <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
   <title>
-    <%= htmlWebpackPlugin.options.title %>
+    <%= htmlWebpackPlugin.options.name %>
   </title>
 </head>
 
 <body>
+  
+  <header>
+    <figure>
+      <img src="<%= require('./logos/DatabizLogo.svg') %>">
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Group</a></li>
+        <li><a href="">Philosophy</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="">Corporate</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main class="container">
-    <h1>Hello <span><%= htmlWebpackPlugin.options.title %></span>!</h1>
-    <p><small>another awesome <span class="strong">Bitrock</span> application!</small></p>
-    <hr />
-    <img class="cover" src="https://placeimg.com/1000/500/nature" alt="example cover image">
-  </main>
+  <section>
+    <article>
+
+    </article>
+  </section>
+
+  <section id="group">
+    <article>
+      <div>
+        <header>
+          <h2>we have become a group</h2>
+        </header>
+        <figure>
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div>
+        <h3>Lato Bold 30pt</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <div>
+        <header>
+          <img src="<%= require('./logos/BitrockLogo.svg') %>">
+        </header>
+        <figure>
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div>
+        <h3>Lato Bold 30pt</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem
+          ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <div>
+        <header>
+          <img src="<%= require('./logos/RadicalbitLogo.svg') %>">
+        </header>
+        <figure>
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div>
+        <h3>Lato Bold 30pt</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem
+          ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <div>
+        <header>
+          <h2>this is our mission</h2>
+        </header>
+        <figure>
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div>
+        <h3>Lato Bold 30pt</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem
+          ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="partners" id="partners">
+    <article>
+      <ul>
+        <li>partner</li>
+        <li>partner</li>
+        <li>partner</li>
+        <li>partner</li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>
+    <article>
+      <div>
+        <h4>Databiz Group</h4>
+        <ul>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Investors</h4>
+        <ul>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacts</h4>
+        <ul>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+        </ul>
+      </div>
+    </article>
+  </footer>
+  <footer>
+    <figure>
+      <img src="<%= require('./logos/DatabizLogo.white.svg') %>">
+    </figure>
+
+    <p>Copyright <span class="year"></span> Databiz Group s.r.l - 
+      Partita IVA/C.F.: 04268680263</p>
+  </footer>
+
 
   <section class="js-warning">
     Your browser has Javascript turned off!

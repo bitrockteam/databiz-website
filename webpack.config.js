@@ -26,6 +26,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: pkg.name,
+      name: pkg.displayName,
       description: pkg.description,
       color: pkg.themeColor,
       template: './src/assets/index.html'
@@ -68,6 +69,10 @@ module.exports = {
           'style-loader',
           'css-loader',
           'sass-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
   }
