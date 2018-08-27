@@ -17,11 +17,19 @@
       grid-template-columns: 1fr 1fr;
     }
 
+    .fa-bars {
+      display: none;
+    }
+
     nav {
       ul {
+        margin-top: 0;
+
         li {
           display: inline-block;
           margin-right: 15px;
+          font-size: 1em;
+          text-align: left;
 
           &:last-child {
             margin-right: 0;
@@ -83,7 +91,9 @@
 
   footer {
     & > .wrapper {
-      text-align: left;
+      article {
+        text-align: left;
+      } 
     }
   }
 

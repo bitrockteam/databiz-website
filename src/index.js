@@ -37,11 +37,17 @@ $(window).on('scroll', evt => {
 // Scroll to element for navigation
 $('header nav li a').on('click', evt => {
   evt.preventDefault();
+  $('header.topbar').removeClass('open');
   const target = '#' + evt.target.href.split('#')[1];
   scrollToElem(target);
 });
 
-$('header.topbar img').on('click', evt => scrollTop());
+// Click logo, scroll back to top
+$('header.topbar img').on('click', e => scrollTop());
+
+$('i.fa-bars').on('click', evt => {
+  $('header.topbar').toggleClass('open');
+});
 
 // Register service workers for PWA
 if ('serviceWorker' in navigator) {

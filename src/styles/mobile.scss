@@ -35,15 +35,40 @@ header.topbar {
   background-color: $background;
   overflow: hidden;
 
+  .fa-bars {
+    position: fixed;
+    right: 20px;
+    top: 24px;
+    font-size: 30px;
+    color: $darkGrey;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+
+  &.open {
+    height: 100% !important;
+  }
+
   &.sticky {
     $h: $topBar - 30;
     height: $h;
     line-height: $h;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0; 
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0;
+
+    .fa-bars {
+      top: 14px;
+    }
   }
 
   nav {
+    ul {
+      margin-top: 30px;
 
+      li {
+        text-align: center;
+        font-size: 1.4em;
+      }
+    }
   }
 
   figure {
@@ -93,9 +118,10 @@ section, footer {
 
 #slider {
   li {
+    text-align: center;
+
     img {
-      width: 80%;
-      text-align: center;
+      width: 80%;  
     }
   }
 }
