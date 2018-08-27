@@ -1,21 +1,47 @@
 
+import $ from 'jquery';
+import { scrollTop, scrollToElem } from './libs/dom';
 import './styles/app.scss';
-import { scrollTop, scrollToElem, $, $$ } from './libs/dom';
+
+// Setup slider for "partners" section
+const setupSlider = () => {
+  import('lightslider').then(data => 
+    $("#slider").lightSlider({
+      item: 2,
+      auto: true,
+      loop: true
+    })
+  );
+};
 
 // Dynamic year in footer
-const year = new Date().getFullYear();
-$('span.year').innerHTML = year;
+const setYear = () => {
+  const year = new Date().getFullYear();
+  $('span.year').innerHTML = year;
+};
+
+// Setting hero height equals screen space
+const setHeroHeight = () => {
+  const screen = window.innerHeight - 90;
+  $('#hero').height(screen);
+};
+
+// Apply class to top bar when scoll past hero
+$(window).on('scroll', evt => {
+  const hero = document.querySelector('#hero');
+  const condition = window.scrollY > hero.clientHeight;
+  const nav = $('header.topbar');
+  condition ? nav.addClass('sticky') : nav.removeClass('sticky');
+});
 
 // Scroll to element for navigation
-const navigate = elem => {
-  elem.addEventListener('click', evt => {
-    evt.preventDefault();
-    const target = '#' + evt.target.href.split('#')[1];
-    scrollToElem(target);
-  });
-}
+$('header nav li a').on('click', evt => {
+  evt.preventDefault();
+  const target = '#' + evt.target.href.split('#')[1];
+  scrollToElem(target);
+});
 
-[...$$('header nav li a')].map(e => navigate(e));
+$('header.topbar img').on('click', evt => scrollTop());
 
 // Register service workers for PWA
 if ('serviceWorker' in navigator) {
@@ -30,3 +56,15 @@ if ('serviceWorker' in navigator) {
 
 // Javascript disabled warning
 document.querySelector('.js-warning').style.display = 'none';
+
+
+// Initialize everything
+$(window).on('load', evt => {
+  window.jQuery = $;
+
+  setYear();
+  setupSlider();
+  setHeroHeight();
+
+  import('./libs/nodes');
+});

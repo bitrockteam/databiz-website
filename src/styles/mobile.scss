@@ -1,10 +1,142 @@
 @import './vars.scss';
+@import './mixins.scss';
 
-section.partners {
-  background: $lightGrey;
+header, 
+.corporate, 
+.partners {
+  ul {
+    @extend %unstyledList;
+  }
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-top: $topBar;
+  background: $background;
+}
+
+body > section:nth-child(2n + 1) {
+  background-color: $white;
+}
+
+header.topbar {
+  transition: all 1s ease;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $topBar;
+  line-height: $topBar;
+  background-color: $background;
+  overflow: hidden;
+
+  &.sticky {
+    $h: $topBar - 30;
+    height: $h;
+    line-height: $h;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0; 
+  }
+
+  nav {
+
+  }
+
+  figure {
+    width: 165px;
+    margin: 0 auto;
+
+    img {
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+}
+
+.timeline {
+  
+}
+
+section {
+  article {
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+section, footer {
+  div.wrapper {
+    padding: 130px 50px; 
+  }
+}
+
+#group {
+  article {
+    div:nth-child(3) {
+      margin-top: 100px;
+    }
+  }
+}
+
+#hero {
+   div.wrapper {
+    padding: 0; 
+  }
+}
+
+#slider {
+  li {
+    img {
+      width: 80%;
+      text-align: center;
+    }
+  }
 }
 
 footer {
-  background: $darkGrey;
-  color: $white;
+  background: $lightGrey;
+  font-size: 20px;
+  line-height: 30px;
+
+  & > .wrapper {
+    article {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+  }
+  
+
+  &.credits{
+    background: $darkGrey;
+    font-size: 16px;
+    color: $white;
+
+    .wrapper {
+      padding: 50px 0;
+
+      article {
+        display: block;
+      }
+    }
+
+    figure {
+      img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 150px;
+      }
+    }
+    p{
+      margin: 0;
+      text-align: center;
+    }
+  }
 }

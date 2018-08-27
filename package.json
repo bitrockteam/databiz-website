@@ -38,6 +38,9 @@
   },
   "dependencies": {
     "bitquest": "1.0.0",
+    "d3": "v3",
+    "jquery": "3.3.1",
+    "lightslider": "1.1.6",
     "normalize.css": "8.0.0",
     "typebase.css": "0.5.0"
   },

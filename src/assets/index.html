@@ -10,151 +10,245 @@
   <title>
     <%= htmlWebpackPlugin.options.name %>
   </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   
-  <header>
-    <figure>
-      <img src="<%= require('./logos/DatabizLogo.svg') %>">
-    </figure>
-    <nav>
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Group</a></li>
-        <li><a href="">Philosophy</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="">Corporate</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="wrapper">
+      <figure>
+        <img 
+          src="<%= require('./logos/DatabizLogo.svg') %>"
+          alt="Databiz Group"
+        >
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#group">Group</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#corporate">Corporate</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <article>
+  <section id="hero">
+    <div class="wrapper">
+      <article>
+        <div id="vis"></div>
+      </article>
+    </div>
+  </section>
 
-    </article>
+  <section id="about">
+    <div class="wrapper">
+      <article>
+        <div>
+          <header>
+            <h2>we are a group</h2>
+          </header>
+          <figure>
+            <img src="https://via.placeholder.com/690x460" alt="">
+          </figure>
+        </div>
+        <div>
+          <h3>From Databiz to Databiz Group</h3>
+          <p>Born as an innovative system integrator in 2009, Databiz evolves in 2017 and transforms into a holding company (DatabizGroup),
+            in order to scale fast, facing the evolving market scenario and aggregate innovative competences and methodologies
+            addressing the Digital Transformation challenges. From this reorganization comes to light in 2018 Bitrock, a consulting
+            and system integration company committed to offer avant-garde and innovative solutions in the field of Microservices,
+            Reactive Platforms and DevOps, with the objective to provide reliable innovation through a completely different paradigm
+            of projectuality, in order to understand the real needs of the clients and anticipate trends and evolutions. Databiz
+            Group also includes Radicalbit: a software firm focused on the design and development of Fast Data and Agile Data Preparation
+            products and solutions, offering enterprise solutions to data intense companies in order to empower competitive advantages.</p>
+        </div>
+      </article>
+      <article class="timeline">
+      
+      </article>
+    </div>
   </section>
 
   <section id="group">
-    <article>
-      <div>
-        <header>
-          <h2>we have become a group</h2>
-        </header>
-        <figure>
-          <img src="" alt="">
-        </figure>
-      </div>
-      <div>
-        <h3>Lato Bold 30pt</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
-      </div>
-    </article>
-  </section>
-
-  <section>
-    <article>
-      <div>
-        <header>
+    <div class="wrapper">
+      <article>
+        <div>
+          <header>
+            <h2>our identity</h2>
+          </header>
+        </div>
+        <div>
           <img src="<%= require('./logos/BitrockLogo.svg') %>">
-        </header>
-        <figure>
-          <img src="" alt="">
-        </figure>
-      </div>
-      <div>
-        <h3>Lato Bold 30pt</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem
-          ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
-      </div>
-    </article>
-  </section>
-
-  <section>
-    <article>
-      <div>
-        <header>
+          <h3>Reliable innovation</h3>
+          <p>Bitrock is consulting and system integration company committed to offer avant-garde and innovative solutions in the field
+          of Microservices, Reactive Platform and Fast Data technologies, with the objective to accompany and support companies along
+          the digital transformation path. Innovation and research are the core of Bitrock. The company aims to provide reliable innovation
+          through a completely different paradigm of projectuality, in order to understand the real needs of the clients and anticipate
+          trends and evolutions.</p>
+          <a class="cta" href="https://bitrock.it" target="_blank">
+            discover
+          </a>
+        </div>
+        <div>
           <img src="<%= require('./logos/RadicalbitLogo.svg') %>">
-        </header>
-        <figure>
-          <img src="" alt="">
-        </figure>
-      </div>
-      <div>
-        <h3>Lato Bold 30pt</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem
-          ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
-      </div>
-    </article>
+          <h3>Deep, Different, Disruptive.</h3>
+          <p>Radicalbit is a highly specialized software firm, founded in Milan, in 2015, focused on the design and development of Fast
+          Data products and solutions, combining streaming technologies with Machine Learning and A.I. Radicalbit offers enterprise
+          solutions to data intense companies in order to empower competitive advantages. Radicalbit team is an unique mix between
+          Data Science and state-of-the-art skills and competences with a clear business vision about how the customers will benefit
+          by adopting the innovative fast data approach.</p>
+          <a class="cta" href="https://radicalbit.io" target="_blank">
+            discover
+          </a>
+        </div>
+      </article>
+    </div>
   </section>
 
-  <section>
-    <article>
-      <div>
-        <header>
-          <h2>this is our mission</h2>
-        </header>
-        <figure>
-          <img src="" alt="">
-        </figure>
-      </div>
-      <div>
-        <h3>Lato Bold 30pt</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aut voluptates. In nisi quaerat harum dolorem
-          ipsum animi minus, ab molestiae, repellendus quasi perferendis quas ea officia alias obcaecati.</p>
-      </div>
-    </article>
+  <section id="philosophy">
+    <div class="wrapper">
+      <article>
+        <div>
+          <header>
+            <h2>we have a mission</h2>
+          </header>
+          <figure>
+            <img src="https://via.placeholder.com/690x460" alt="">
+          </figure>
+        </div>
+        <div>
+          <h3>Innovation delivered</h3>
+          <p>Databiz Group has the ambition to create a holding specialized in sustainable and reliable innovation. We aim to face the
+          market with valuable business enabling solutions. This means working together with our customers, side by side inorder to
+          better understand their needs in depth, to propose solutions that allow the implementation of cutting-edge technological
+          solutions, not futuristic, but which led to immediate and tangible results. Our group grows through the sum of skills, building
+          year after year, month after month a working place where talents can find space to express their own capabilities, where
+          personal initiative is encouraged and valued, and professional growth is ensured and boosted</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   <section class="partners" id="partners">
-    <article>
-      <ul>
-        <li>partner</li>
-        <li>partner</li>
-        <li>partner</li>
-        <li>partner</li>
-      </ul>
-    </article>
+    <div class="wrapper">
+      <article>
+        <div>
+          <header>
+            <h2>our partners</h2>
+          </header>
+        </div>
+       <div>
+        <ul id="slider">
+          <li>
+            <img 
+              src="<%= require('./partners/confluent.png') %>" 
+              alt="Confluent"
+            >
+            <p>Confluent, founded by the creators of open source Apache Kafka®, provides the streaming platform that enables enterprises
+            to maximize the value of data.</p>
+          </li>
+          <li>
+            <img 
+              src="<%= require('./partners/2016-02-29-lightbend.png') %>" 
+              alt="Lightbend"
+            >
+            <p>Lightbend provides the leading Reactive application development platform for building distributed systems.</p>
+          </li>
+          <li>
+            <img 
+              src="<%= require('./partners/webtrekk-logo-with_claim.png') %>" 
+              alt="Webtrekk"
+            >
+            <p>Webtrekk is a customer analytics platform that allows you to connect, analyze and activate your user and marketing data across
+            all devices.</p>
+          </li>
+          <li>
+            <img 
+              src="<%= require('./partners/mesosphere-logo.png') %>" 
+              alt="Mesosphere"
+            >
+            <p>Mesosphere is dedicated to helping enterprises unlock the next generation of datacenter scale, efficiency and automation
+            with Apache Mesos.</p>
+          </li>
+          <li>
+            <img 
+              src="<%= require('./partners/Cloudera_logo.svg.png') %>" 
+              alt="Cloudera"
+            >
+            <p>Cloudera delivers the modern platform for machine learning and analytics optimized for the cloud. Imagine having access to
+            all your data in one platform.</p>
+          </li>
+          <li>
+            <img 
+              src="<%= require('./partners/DataStax_Logo.png') %>" 
+              alt="DataStax"
+            >
+            <p>DataStax powers the Right-Now Enterprise with the always-on, distributed cloud database built on Apache Cassandra™ and designed
+            for hybrid cloud.</p>
+          </li>
+        </ul>
+       </div>
+      </article>
+    </div>
   </section>
 
-  <footer>
-    <article>
-      <div>
-        <h4>Databiz Group</h4>
-        <ul>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Investors</h4>
-        <ul>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contacts</h4>
-        <ul>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-        </ul>
-      </div>
-    </article>
+  <footer id="corporate" class="corporate">
+    <div class="wrapper">
+      <article>
+        <div>
+          <h4>Treviso</h4>
+          <p>
+             Sede legale e operativa<br> 
+             Viale della Repubblica 156/a<br> 
+             31100 Treviso (TV)<br>
+             Tel: 0422 1600025
+          </p>
+          <p>
+            <a href="mailto:info@databiz.it">
+              info@databiz.it
+            </a>
+          </p>
+          <ul class="social">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Milano</h4>
+          <p>
+             Sede operativa<br>
+             Via Borsieri 41<br> 
+             20159 Milano (MI)<br>
+             Tel: 0422 1600025
+          </p>
+          <p>
+            <a href="mailto:info@databiz.it">
+              info@databiz.it
+            </a>
+          </p>
+          <ul class="social">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </article>
+    </div>
   </footer>
-  <footer>
-    <figure>
-      <img src="<%= require('./logos/DatabizLogo.white.svg') %>">
-    </figure>
-
-    <p>Copyright <span class="year"></span> Databiz Group s.r.l - 
-      Partita IVA/C.F.: 04268680263</p>
+  <footer class="credits">
+    <div class="wrapper">
+      <article>
+        <figure>
+          <img src="<%= require('./logos/DatabizLogo.white.svg') %>">
+        </figure>
+      
+        <p>Copyright <span class="year"></span> Databiz Group s.r.l - Partita IVA/C.F.: 04268680263</p>
+      </article>
+    </div>
   </footer>
 
 
