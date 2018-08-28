@@ -7,6 +7,8 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const pkg = require('./package.json');
 const { isProd, envs, env } = require('./scripts/envs.js');
+const ms = new Date().getMilliseconds();
+const rand = Math.floor(Math.random() * 9999);
 
 module.exports = {
   entry: {
@@ -15,7 +17,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: '[name].[hash].js',
-    chunkFilename: '[name].[hash].js'
+    chunkFilename: 'js/[name].[hash].js'
   },
 
   mode: isProd ? envs.production : envs.development ,
@@ -28,23 +30,24 @@ module.exports = {
       title: pkg.name,
       name: pkg.displayName,
       description: pkg.description,
-      color: pkg.themeColor,
+      color: pkg.config.themeColor,
       template: './src/assets/index.html'
     }),
 
     new WebpackPwaManifest({
       name: pkg.name,
-      short_name: pkg.displayName,
+      short_name: 'Databiz',
       description: pkg.description,
       background_color: '#ffffff',
-      theme_color: pkg.themeColor,
-      start_url: '',
+      theme_color: pkg.config.themeColor,
+      start_url: '.',
       icons: [
         {
           src: path.resolve('src/assets/dbz.png'),
           sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
         }
-      ]
+      ],
+      filename: `manifest.${ms}${rand}.txt`
     }),
 
     new workboxPlugin.GenerateSW({
@@ -72,7 +75,15 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'img/[name].[ext]',
+              context: ''
+            }
+          }
+        ]
       }
     ]
   }

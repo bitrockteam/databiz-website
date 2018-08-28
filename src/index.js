@@ -3,11 +3,15 @@ import $ from 'jquery';
 import { scrollTop, scrollToElem } from './libs/dom';
 import './styles/app.scss';
 
+const $menu = $('button.hamburger');
+
 // Setup slider for "partners" section
 const setupSlider = () => {
-  import('lightslider').then(data => 
+  const items = window.innerWidth < 992 ? 1 : 2; 
+
+  import(/* webpackChunkName: "lightslider" */ 'lightslider').then(data => 
     $("#slider").lightSlider({
-      item: 2,
+      item: items,
       auto: true,
       loop: true
     })
@@ -37,6 +41,7 @@ $(window).on('scroll', evt => {
 // Scroll to element for navigation
 $('header nav li a').on('click', evt => {
   evt.preventDefault();
+  $menu.removeClass('is-active');
   $('header.topbar').removeClass('open');
   const target = '#' + evt.target.href.split('#')[1];
   scrollToElem(target);
@@ -45,7 +50,9 @@ $('header nav li a').on('click', evt => {
 // Click logo, scroll back to top
 $('header.topbar img').on('click', e => scrollTop());
 
-$('i.fa-bars').on('click', evt => {
+// Open/close mobile nav
+$menu.on('click', evt => {
+  $menu.toggleClass('is-active');
   $('header.topbar').toggleClass('open');
 });
 
@@ -72,5 +79,5 @@ $(window).on('load', evt => {
   setupSlider();
   setHeroHeight();
 
-  import('./libs/nodes');
+  import(/* webpackChunkName: "company-nodes" */ './libs/nodes');
 });

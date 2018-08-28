@@ -34,7 +34,7 @@ header.topbar {
 section {
   article {
     a.cta {
-      display: inline-block;
+      display: block;
       font-size: 18px;
       text-transform: uppercase;
       color: $primary;
@@ -45,6 +45,9 @@ section {
       cursor: pointer;
       transition: all 0.4s ease;
       text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+      width: 60%;
 
       &:hover {
         color: $white;
@@ -55,8 +58,9 @@ section {
       header {
         h2 {
           text-transform: uppercase;
-          font-weight: 400;
-          font-size: 90px;
+          font-weight: 900;
+          font-size: 52px;
+          text-align: center;
           color: $primary;
         }
       }

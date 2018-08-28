@@ -35,18 +35,20 @@ header.topbar {
   background-color: $background;
   overflow: hidden;
 
-  .fa-bars {
+  button.hamburger {
+    outline: none;
     position: fixed;
-    right: 20px;
-    top: 24px;
-    font-size: 30px;
-    color: $darkGrey;
-    transition: all 1s ease;
+    right: 30px;
+    top: -8px;
+    font-size: 26px;
+    color: $lightGrey;
+    // transition: all 1s ease;
     cursor: pointer;
   }
 
   &.open {
     height: 100% !important;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0;
   }
 
   &.sticky {
@@ -55,8 +57,8 @@ header.topbar {
     line-height: $h;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0;
 
-    .fa-bars {
-      top: 14px;
+    button.hamburger {
+      top: -12px;
     }
   }
 
@@ -73,7 +75,7 @@ header.topbar {
 
   figure {
     width: 165px;
-    margin: 0 auto;
+    margin: 0 0 0 30px;
 
     img {
       vertical-align: middle;
@@ -98,7 +100,7 @@ section {
 
 section, footer {
   div.wrapper {
-    padding: 130px 50px; 
+    padding: 40px 50px; 
   }
 }
 
@@ -121,7 +123,7 @@ section, footer {
     text-align: center;
 
     img {
-      width: 80%;  
+      height: 90px;  
     }
   }
 }
@@ -133,8 +135,7 @@ footer {
 
   & > .wrapper {
     article {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      
       text-align: center;
     }
   }
@@ -165,4 +166,10 @@ footer {
       text-align: center;
     }
   }
+}
+
+a.cta {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
 }

@@ -17,7 +17,7 @@
       grid-template-columns: 1fr 1fr;
     }
 
-    .fa-bars {
+    button.hamburger {
       display: none;
     }
 
@@ -39,16 +39,30 @@
     }
   }
 
+  section, footer {
+    div.wrapper {
+      padding: 130px 50px; 
+    }
+  }
+
   section {
     article {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 60px;
 
+      a.cta {
+        margin: 0;
+        width: auto;
+        display: inline-block;
+      }
+
       div:first-child {
         header {
           h2 {
             margin-top: 0;
+            font-size: 90px;
+            text-align: left;
           }
         }
         figure {
@@ -92,6 +106,8 @@
   footer {
     & > .wrapper {
       article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         text-align: left;
       } 
     }
@@ -105,3 +121,4 @@
     margin: 0 auto;
   }
 }
+
