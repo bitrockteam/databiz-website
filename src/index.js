@@ -79,5 +79,11 @@ $(window).on('load', evt => {
   setupSlider();
   setHeroHeight();
 
-  import(/* webpackChunkName: "company-nodes" */ './libs/nodes');
+  // import(/* webpackChunkName: "company-nodes" */ './libs/nodes');
+  import(/* webpackChunkName: "timeline" */ 
+  'timeline/src/js/timeline').then( data => {
+    $('.timeline').timeline({
+      verticalTrigger: '150px'
+    });
+  });
 });

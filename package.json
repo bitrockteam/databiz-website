@@ -44,6 +44,7 @@
     "jquery": "3.3.1",
     "lightslider": "1.1.6",
     "normalize.css": "8.0.0",
+    "timeline": "https://github.com/bitrockteam/timeline",
     "typebase.css": "0.5.0",
     "yarn": "1.9.4"
   },
