@@ -13,8 +13,11 @@
     }
 
     .wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     button.hamburger {
@@ -41,7 +44,7 @@
 
   section, footer {
     div.wrapper {
-      padding: 130px 50px; 
+      padding: 120px 0;
     }
   }
 
