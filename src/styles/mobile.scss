@@ -17,7 +17,6 @@ figure {
 
 
 body {
-  margin-top: $topBar;
   background: $background;
 }
 
@@ -26,7 +25,7 @@ body > section:nth-child(2n + 1) {
 }
 
 header.topbar {
-  transition: all 1s ease;
+  transition: all 250ms ease;
   position: fixed;
   z-index: 101;
   top: 0;

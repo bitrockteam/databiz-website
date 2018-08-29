@@ -2,7 +2,8 @@
 
 %baseParagraph {
   font-size: 18px;
-  line-height: 25px;
+  font-weight: 300;
+  line-height: 30px;
 }
 
 body {
@@ -66,7 +67,7 @@ section {
       }
       h3 {
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 700;
       }
       p {
         @extend %baseParagraph;

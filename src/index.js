@@ -28,7 +28,7 @@ const setYear = () => {
 
 // Setting hero height equals screen space
 const setHeroHeight = () => {
-  const screen = window.innerHeight - 90;
+  const screen = window.innerHeight;
   $('#hero').height(screen);
 };
 
