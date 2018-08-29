@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const workboxPlugin = require('workbox-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const pkg = require('./package.json');
 const { isProd, envs, env } = require('./scripts/envs.js');
@@ -25,6 +26,12 @@ module.exports = {
 
   plugins: [
     new FaviconsWebpackPlugin('./src/assets/dbz.png'),
+
+    new CopyWebpackPlugin([{
+      from: './src/libs/particles.conf.json',
+      to: 'data/particles.json',
+      flatten: true
+    }]),
 
     new HtmlWebpackPlugin({
       title: pkg.name,

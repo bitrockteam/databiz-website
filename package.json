@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "ava": "0.25.0",
+    "copy-webpack-plugin": "4.5.2",
     "css-loader": "1.0.0",
     "cypress": "3.0.2",
     "esm": "3.0.71",
@@ -44,6 +45,7 @@
     "jquery": "3.3.1",
     "lightslider": "1.1.6",
     "normalize.css": "8.0.0",
+    "particles.js": "2.0.0",
     "timeline": "https://github.com/bitrockteam/timeline",
     "typebase.css": "0.5.0",
     "yarn": "1.9.4"

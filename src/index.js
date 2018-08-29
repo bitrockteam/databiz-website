@@ -1,6 +1,8 @@
 
 import $ from 'jquery';
 import { scrollTop, scrollToElem } from './libs/dom';
+import './libs/particles.conf.json';
+import 'particles.js';
 import './styles/app.scss';
 
 const $menu = $('button.hamburger');
@@ -86,4 +88,6 @@ $(window).on('load', evt => {
       verticalTrigger: '150px'
     });
   });
+
+  particlesJS.load('particles', './data/particles.json');
 });

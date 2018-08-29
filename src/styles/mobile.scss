@@ -14,6 +14,8 @@ figure {
   margin: 0;
 }
 
+
+
 body {
   margin-top: $topBar;
   background: $background;
@@ -113,8 +115,16 @@ section, footer {
 }
 
 #hero {
-   div.wrapper {
+  position: relative;
+
+  div.wrapper {
     padding: 0; 
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
