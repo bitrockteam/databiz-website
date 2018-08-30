@@ -49,6 +49,7 @@ header.topbar {
 
   &.open {
     height: 100% !important;
+    background-color: $white;
     // box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0;
   }
 
@@ -119,14 +120,48 @@ section, footer {
 #hero {
   position: relative;
 
-  div.wrapper {
-    padding: 0; 
-  }
-
   canvas {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  header {
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 30px;
+      color: $black;
+      margin: 0;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 60px;
+      letter-spacing: 1.5px;
+      color: #4A4A4A;
+      margin: 0;
+    }
+  }
+
+  figure {
+    z-index: 2;
+
+    img {
+      max-height: 75vh;
+      max-width: calc(100vw - 120px);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding-top: 0;
+    }
   }
 }
 
@@ -184,4 +219,36 @@ a.cta {
   margin: 0 auto;
   text-align: center;
   width: 60%;
+}
+
+#hero, #hero article {
+  display: flex; // workaround
+}
+
+
+
+// da inserire in '~hamburgers/_sass/hamburgers/hamburgers.scss'
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: $black;
+  border-radius: 0;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+header.topbar button.hamburger {
+  top: -12px;
 }

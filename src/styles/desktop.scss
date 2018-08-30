@@ -46,6 +46,20 @@
     }
   }
 
+  #hero {
+    header{
+      h2{
+        font-size: 90px;
+        max-width: 420px;
+      }
+      h3{
+        font-size: 45px;
+        max-width: 285px;
+        margin: 15px 0;
+      }
+    }
+  }
+
   #timeline {
     display: block;
   }
@@ -66,8 +80,10 @@
         header {
           h2 {
             margin-top: 0;
-            font-size: 90px;
+            font-size: 75px;
+            letter-spacing: 2.5px;
             text-align: left;
+            margin-bottom: 60px;
           }
         }
       }
@@ -75,6 +91,16 @@
       div:last-child {
         h3 {
           margin-top: 120px;
+        }
+      }
+    }
+  }
+
+  #about {
+    div:first-child {
+      header {
+        h2 {
+          max-width: 360px;
         }
       }
     }
@@ -91,6 +117,16 @@
     }
   }
 
+  #philosophy {
+    div:first-child {
+      header {
+        h2 {
+          max-width: 420px;
+        }
+      }
+    }
+  }
+
   // section:nth-child(2n) {
   //   article {
   //     direction: rtl;
@@ -100,6 +136,14 @@
   #partners {
     article {
       display: block;
+    }
+
+    div:first-child {
+      header {
+        h2 {
+          max-width: 420px;
+        }
+      }
     }
   }
 

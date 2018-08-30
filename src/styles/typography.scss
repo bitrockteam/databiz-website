@@ -25,7 +25,6 @@ header.topbar {
 
         &:hover {
           color: $primary;
-          border-bottom-color: $primary;
         }
       }
     }
@@ -36,7 +35,8 @@ section {
   article {
     a.cta {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: $primary;
       background: none;
@@ -44,11 +44,11 @@ section {
       padding: 12px 40px;
       border-radius: 30px;
       cursor: pointer;
-      transition: all 0.4s ease;
+      transition: all 250ms ease;
       text-decoration: none;
       margin: 0 auto;
       text-align: center;
-      width: 60%;
+      // width: 60%;
 
       &:hover {
         color: $white;
