@@ -29,7 +29,7 @@ module.exports = {
 
     new CopyWebpackPlugin([{
       from: './src/libs/particles.conf.json',
-      to: 'data/particles.json',
+      to: 'data/particles.txt',
       flatten: true
     }]),
 

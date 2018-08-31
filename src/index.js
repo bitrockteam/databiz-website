@@ -89,5 +89,5 @@ $(window).on('load', evt => {
     });
   });
 
-  particlesJS.load('particles', './data/particles.json');
+  particlesJS.load('particles', './data/particles.txt');
 });
