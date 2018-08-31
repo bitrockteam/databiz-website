@@ -6571,7 +6571,7 @@ timed-out@^4.0.0:
 
 "timeline@https://github.com/bitrockteam/timeline":
   version "1.0.0"
-  resolved "https://github.com/bitrockteam/timeline#b92efd7da07cd48d9e71a4771d74f554d1dedfe9"
+  resolved "https://github.com/bitrockteam/timeline#23939d47f96b629540db9c0557634986910ab6f9"
 
 timers-browserify@^2.0.4:
   version "2.0.10"

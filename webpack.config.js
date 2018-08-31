@@ -42,7 +42,7 @@ module.exports = {
     }),
 
     new WebpackPwaManifest({
-      name: pkg.name,
+      name: 'Databiz Group',
       short_name: 'Databiz',
       description: pkg.description,
       background_color: '#ffffff',
