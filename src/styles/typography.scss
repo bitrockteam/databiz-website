@@ -71,6 +71,7 @@ section {
       }
       p {
         @extend %baseParagraph;
+        margin: 30px 0;
       }
     }
   }
@@ -91,6 +92,7 @@ section {
     p {
       @extend %baseParagraph;
       text-align: center;
+      margin: 60px 0;
     }
   }
 }
