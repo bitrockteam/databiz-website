@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 %baseParagraph {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 300;
-  line-height: 30px;
 }
 
 body {
@@ -99,7 +104,14 @@ section {
 
 footer {
   h4 {
-    font-size: 30px;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
     color: $primary;
+  }
+
+  p {
+    @extend %baseParagraph;
+    margin: 30px 0 0 0;
   }
 }
