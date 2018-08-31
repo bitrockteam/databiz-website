@@ -41,7 +41,7 @@ $(window).on('scroll', evt => {
 });
 
 // Scroll to element for navigation
-$('header nav li a').on('click', evt => {
+$('header nav li a, #hero .cta').on('click', evt => {
   evt.preventDefault();
   $menu.removeClass('is-active');
   $('header.topbar').removeClass('open');
