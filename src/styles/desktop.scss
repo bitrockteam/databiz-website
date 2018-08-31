@@ -162,6 +162,15 @@
     }
   }
 
+  #slider {
+    li {
+      img {
+        height: 90px;  
+        width: auto;
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1200px) {
