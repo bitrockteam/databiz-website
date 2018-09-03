@@ -72,7 +72,8 @@ header.topbar {
 
       li {
         text-align: center;
-        font-size: 1.4em;
+        font-size: 24px;
+        line-height: 90px;
       }
     }
   }
@@ -130,6 +131,7 @@ section, footer {
     position: absolute;
     top: 20%;
     z-index: 3;
+    max-width: calc(100vw - 60px);
 
     h2 {
       text-transform: uppercase;
@@ -147,6 +149,11 @@ section, footer {
       letter-spacing: 1.5px;
       color: #4A4A4A;
       margin: 0;
+    }
+
+    .cta {
+      position: absolute;
+      bottom: 0;
     }
   }
 

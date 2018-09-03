@@ -38,6 +38,13 @@
         }
       }
     }
+
+    &.sticky {
+
+      .wrapper {
+        height: 60px;
+      }
+    }
   }
 
   section, footer {
