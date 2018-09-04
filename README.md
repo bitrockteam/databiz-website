@@ -42,5 +42,7 @@ Every time the `master` branch got updated (a direct commit or a merged PR) a ne
 2. deploy the build folder into the related `gh-pages` branch -->
 
 
-## License
-Databiz Group internal use only.
+## Licenses
+The Databiz Group, Bitrock and Radicalbit logos are registered trademarks.
+Code is distributed under the [GNU AGPLv3 license](LICENSE).
+Included stock photos have been [provided by Unsplash](https://unsplash.com/license).
