@@ -6,8 +6,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 %baseParagraph {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 27px;
   font-weight: 300;
 }
 
@@ -65,14 +65,16 @@ section {
         h2 {
           text-transform: uppercase;
           font-weight: 900;
-          font-size: 52px;
+          font-size: 30px;
           text-align: center;
           color: $primary;
+          margin-bottom: 45px;
         }
       }
       h3 {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 700;
+        margin-top: 30px;
       }
       p {
         @extend %baseParagraph;
@@ -104,7 +106,7 @@ section {
 
 footer {
   h4 {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
     color: $primary;
@@ -112,6 +114,6 @@ footer {
 
   p {
     @extend %baseParagraph;
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
   }
 }

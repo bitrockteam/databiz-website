@@ -91,7 +91,7 @@ header.topbar {
 }
 
 #timeline {
-  padding-top: 45px;
+  padding-top: 30px;
 }
 
 section {
@@ -113,7 +113,7 @@ section, footer {
 #group {
   article {
     div:nth-child(3) {
-      margin-top: 100px;
+      margin-top: 45px;
     }
   }
 }
@@ -127,11 +127,14 @@ section, footer {
     left: 0;
   }
 
+    div.wrapper {
+      padding: 0 30px;
+    }
+
   header {
-    position: absolute;
-    top: 20%;
+    max-height: 100%;
+    max-width: calc(100% - 60px);
     z-index: 3;
-    max-width: calc(100vw - 60px);
 
     h2 {
       text-transform: uppercase;
@@ -151,9 +154,17 @@ section, footer {
       margin: 0;
     }
 
-    .cta {
+    .claim {
       position: absolute;
-      bottom: 0;
+      top: calc(90px + 5%);
+    }
+
+    a.cta {
+      position: absolute;
+      bottom: 60px;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: calc(100% - 60px) !important;
     }
   }
 
@@ -191,6 +202,10 @@ footer {
     article {
       
       text-align: center;
+
+      div {
+        margin-bottom: 30px;
+      }
     }
   }
   
@@ -201,7 +216,7 @@ footer {
     color: $white;
 
     .wrapper {
-      padding: 50px 0;
+      // padding: 50px 0;
 
       article {
         display: block;
@@ -225,11 +240,17 @@ footer {
 a.cta {
   margin: 0 auto;
   text-align: center;
-  width: 60%;
+  // width: 60%;
 }
 
 #hero, #hero article {
   display: flex; // workaround
+}
+
+
+
+.lSSlideOuter .lSPager.lSpg>li a {
+  background-color: #cccccc;
 }
 
 
