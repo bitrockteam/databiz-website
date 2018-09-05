@@ -1,11 +1,17 @@
 
 import $ from 'jquery';
+import page from 'page.js';
 import { scrollTop, scrollToElem } from './libs/dom';
 import './libs/particles.conf.json';
 import 'particles.js';
 import './styles/app.scss';
 
 const $menu = $('button.hamburger');
+
+// Trigger animated scroll on every page.js route change
+page('*', data => data.pathname === '/' ?
+  scrollToElem('body') :
+  scrollToElem(data.pathname) );
 
 // Setup slider for "partners" section
 const setupSlider = () => {
@@ -46,11 +52,17 @@ $('header nav li a, #hero .cta').on('click', evt => {
   $menu.removeClass('is-active');
   $('header.topbar').removeClass('open');
   const target = '#' + evt.target.href.split('#')[1];
-  scrollToElem(target);
+  // window.location.hash = target;
+  // scrollToElem(target);
+  page(target);
 });
 
 // Click logo, scroll back to top
-$('header.topbar img').on('click', e => scrollTop());
+$('header.topbar img').on('click', e => {
+  // window.location.hash = '';
+  page('/');
+  // scrollTop();
+});
 
 // Open/close mobile nav
 $menu.on('click', evt => {
