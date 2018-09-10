@@ -2,9 +2,12 @@
 import $ from 'jquery';
 import page from 'page.js';
 import { scrollTop, scrollToElem } from './libs/dom';
+import smoothscroll from 'smoothscroll-polyfill';
 import './libs/particles.conf.json';
 import 'particles.js';
 import './styles/app.scss';
+
+smoothscroll.polyfill();
 
 const $menu = $('button.hamburger');
 

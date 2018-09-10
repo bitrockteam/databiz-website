@@ -47,6 +47,7 @@
     "normalize.css": "8.0.0",
     "page.js": "4.13.3",
     "particles.js": "2.0.0",
+    "smoothscroll-polyfill": "0.4.3",
     "timeline": "https://github.com/bitrockteam/timeline",
     "typebase.css": "0.5.0",
     "yarn": "1.9.4"
