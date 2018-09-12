@@ -38,7 +38,8 @@ module.exports = {
       name: pkg.displayName,
       description: pkg.description,
       color: pkg.config.themeColor,
-      template: './src/assets/index.html'
+      template: './src/assets/index.html',
+      filename: 'index.tmpl.html'
     }),
 
     new WebpackPwaManifest({
