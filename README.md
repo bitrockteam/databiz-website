@@ -1,6 +1,6 @@
 # databiz-website
 
-<!-- [![Build Status](https://travis-ci.org/bitrock-frontend/basic-starter-kit.svg?branch=master)](https://travis-ci.org/bitrock-frontend/basic-starter-kit) -->
+[![Build Status](https://travis-ci.org/bitrockteam/databiz-website.svg?branch=master)](https://travis-ci.org/bitrockteam/databiz-website)
 
 ## Requisites
 You need the following software installed in your machine in order to get started:
