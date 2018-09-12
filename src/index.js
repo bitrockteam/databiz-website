@@ -1,8 +1,11 @@
 
 import $ from 'jquery';
 import page from 'page.js';
-import { scrollTop, scrollToElem } from './libs/dom';
 import smoothscroll from 'smoothscroll-polyfill';
+import { scrollTop, scrollToElem } from './libs/dom';
+import { navigation, hero, about, group,
+  philosophy, footer, partners } from './components/stateless';
+import content from './../content/data';
 import './libs/particles.conf.json';
 import 'particles.js';
 import './styles/app.scss';
@@ -29,12 +32,6 @@ const setupSlider = () => {
   );
 };
 
-// Dynamic year in footer
-const setYear = () => {
-  const year = new Date().getFullYear();
-  $('span.year').innerHTML = year;
-};
-
 // Setting hero height equals screen space
 const setHeroHeight = () => {
   const screen = window.innerHeight;
@@ -50,15 +47,17 @@ $(window).on('scroll', evt => {
 });
 
 // Scroll to element for navigation
-$('header nav li a, #hero .cta').on('click', evt => {
-  evt.preventDefault();
-  $menu.removeClass('is-active');
-  $('header.topbar').removeClass('open');
-  const target = '#' + evt.target.href.split('#')[1];
-  // window.location.hash = target;
-  // scrollToElem(target);
-  page(target);
-});
+const setupScrollNav = () => {
+  $('header nav li a, #hero .cta').on('click', evt => {
+    evt.preventDefault();
+    $menu.removeClass('is-active');
+    $('header.topbar').removeClass('open');
+    const target = '#' + evt.target.href.split('#')[1];
+    // window.location.hash = target;
+    // scrollToElem(target);
+    page(target);
+  });
+}
 
 // Click logo, scroll back to top
 $('header.topbar img').on('click', e => {
@@ -87,14 +86,21 @@ if ('serviceWorker' in navigator) {
 // Javascript disabled warning
 document.querySelector('.js-warning').style.display = 'none';
 
-
 // Initialize everything
 $(window).on('load', evt => {
   window.jQuery = $;
 
-  setYear();
+  navigation(content.navigation);
+  hero(content.hero);
+  about(content.about);
+  group(content.group);
+  philosophy(content.philosophy);
+  partners(content.partners);
+  footer();
+
   setupSlider();
   setHeroHeight();
+  setupScrollNav();
 
   // import(/* webpackChunkName: "company-nodes" */ './libs/nodes');
   import(/* webpackChunkName: "timeline" */ 
