@@ -16,13 +16,10 @@ async function start(urlToFetch) {
 
   const filePath = path.resolve(`./dist/index.html`);
   fse.outputFile(filePath, content);
-  console.log(content);
 
-  // setTimeout(async () => {
-    await browser.close();
-    console.log('Finished!');
-    process.exit();
-  // }, 6000 * 1);
+  await browser.close();
+  console.log('Puppeteer finished!');
+  process.exit();
 }
 
 app.use(express.static(__dirname + './../dist'));
