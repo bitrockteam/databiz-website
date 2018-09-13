@@ -1,6 +1,7 @@
 language: node_js
 dist: trusty
 addons:
+  chrome: stable
   apt:
     packages:
       # This is required to run new chrome on old trusty
@@ -10,6 +11,7 @@ node_js:
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
+  - "google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &"
 script: npm run build
 deploy:
   provider: pages
