@@ -7,7 +7,7 @@ const app = express();
 
 async function start(urlToFetch) {
   console.log('Puppeteer fetching...');
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
 
   await page.goto(urlToFetch);
