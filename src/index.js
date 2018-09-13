@@ -32,12 +32,6 @@ const setupSlider = () => {
   );
 };
 
-// Setting hero height equals screen space
-const setHeroHeight = () => {
-  const screen = window.innerHeight;
-  $('#hero').height(screen);
-};
-
 // Apply class to top bar when scoll past hero
 $(window).on('scroll', evt => {
   const hero = document.querySelector('#hero');
@@ -99,7 +93,6 @@ $(window).on('load', evt => {
   footer();
 
   setupSlider();
-  setHeroHeight();
   setupScrollNav();
 
   // import(/* webpackChunkName: "company-nodes" */ './libs/nodes');
