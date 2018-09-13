@@ -1,5 +1,7 @@
 # databiz-website
 
+![./src/assets/logos/DatabizLogo.svg](./src/assets/logos/DatabizLogo.svg)
+
 [![Build Status](https://travis-ci.org/bitrockteam/databiz-website.svg?branch=master)](https://travis-ci.org/bitrockteam/databiz-website)
 
 ## Requisites
@@ -19,7 +21,7 @@ Move on the folder and install dependencies with Yarn
 $ cd databiz-website && yarn
 ```
 
-Start the development webserver on `localhost:8090`
+Start the development webserver on `localhost:8080`
 ```bash
 $ yarn start
 ```
@@ -33,13 +35,14 @@ This project follows a simple branching policy:
 * `development` where evolutive or experimental code is written
 * `gh-pages` where the distrubutable static files are deployed
 
-Do **NOT** merge directly `development` into `master`, always send a PR to have a review.
+Do **NOT** merge directly `development` into `master` (*it's admin-locked...*), always send a PR to have a review.
 
-<!-- ## Update & deploy
-Every time the `master` branch got updated (a direct commit or a merged PR) a new [Travis CI](https://travis-ci.org/bitrockteam/tech-radar) job is triggered and it composed basically of 2 steps:
+## Update & deploy
+Every time the `master` branch got updated (a direct commit or a merged PR) a new [Travis CI](https://travis-ci.org/bitrockteam/tech-radar) job is triggered and it composed basically of 3 steps:
 
 1. create new build of static files
-2. deploy the build folder into the related `gh-pages` branch -->
+2. server side render the main .html file with Puppeteer
+3. deploy the build folder into the related `gh-pages` branch
 
 
 ## Licenses
