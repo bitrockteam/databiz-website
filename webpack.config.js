@@ -21,7 +21,7 @@ module.exports = {
     chunkFilename: 'js/[name].[hash].js'
   },
 
-  mode: isProd ? envs.production : envs.development ,
+  mode: isProd() ? envs.production : envs.development ,
   devtool: 'source-map',
 
   plugins: [
@@ -39,7 +39,7 @@ module.exports = {
       description: pkg.description,
       color: pkg.config.themeColor,
       template: './src/assets/index.html',
-      filename: 'index.tmpl.html'
+      filename: isProd() ? 'index.tmpl.html' : 'index.html'
     }),
 
     new WebpackPwaManifest({
