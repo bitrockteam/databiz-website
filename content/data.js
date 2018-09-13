@@ -77,7 +77,7 @@ export default {
     }
   },
   "partners": {
-    "title": "ur partners",
+    "title": "our partners",
     "items": [
       {
         "name": "Confluent",
