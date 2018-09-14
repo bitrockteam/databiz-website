@@ -1,6 +1,6 @@
 
 import $ from 'jquery';
-import page from 'page.js';
+import { installRouter } from 'pwa-helpers/router';
 import smoothscroll from 'smoothscroll-polyfill';
 import { scrollTop, scrollToElem } from './libs/dom';
 import { navigation, hero, about, group,
@@ -14,10 +14,18 @@ smoothscroll.polyfill();
 
 const $menu = $('button.hamburger');
 
-// Trigger animated scroll on every page.js route change
-page('*', data => data.pathname === '/' ?
-  scrollToElem('body') :
-  scrollToElem(data.pathname) );
+// Client side routing
+installRouter((location) => {
+  switch(location.pathname){
+    case '/':
+      scrollTop();
+      break;
+    case '/hero':
+      document.body.classList.add('hero-only');
+      break;
+  }
+});
+
 
 // Setup slider for "partners" section
 const setupSlider = () => {
@@ -43,22 +51,12 @@ $(window).on('scroll', evt => {
 // Scroll to element for navigation
 const setupScrollNav = () => {
   $('header nav li a, #hero .cta').on('click', evt => {
-    evt.preventDefault();
     $menu.removeClass('is-active');
     $('header.topbar').removeClass('open');
-    const target = '#' + evt.target.href.split('#')[1];
-    // window.location.hash = target;
-    // scrollToElem(target);
-    page(target);
+    const target = '#' + evt.target.href.split('/')[3];
+    scrollToElem(target);
   });
 }
-
-// Click logo, scroll back to top
-$('header.topbar img').on('click', e => {
-  // window.location.hash = '';
-  page('/');
-  // scrollTop();
-});
 
 // Open/close mobile nav
 $menu.on('click', evt => {

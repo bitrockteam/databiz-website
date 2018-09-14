@@ -12,11 +12,11 @@ import datastaxLogo from './../src/assets/partners/logo-datastax.png';
 
 export default {
   "navigation": [
-    { "label": "About", "link": "#about" },
-    { "label": "Group", "link": "#group" },
-    { "label": "Philosophy", "link": "#philosophy" },
-    { "label": "Partners", "link": "#partners" },
-    { "label": "Contact", "link": "#contact" }
+    { "label": "About", "link": "/about" },
+    { "label": "Group", "link": "/group" },
+    { "label": "Philosophy", "link": "/philosophy" },
+    { "label": "Partners", "link": "/partners" },
+    { "label": "Contact", "link": "/contact" }
   ],
   "hero": {
     "titles": {

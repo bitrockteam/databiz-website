@@ -8,3 +8,13 @@
 @import './typography.scss';
 @import './mobile.scss';
 @import './desktop.scss';
+
+.hero-only{
+  nav, #hero .cta, footer, section {
+    display: none;
+  }
+
+  #hero {
+    display: block;
+  }
+}
