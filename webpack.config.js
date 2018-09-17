@@ -49,6 +49,7 @@ module.exports = {
       background_color: '#ffffff',
       theme_color: pkg.config.themeColor,
       start_url: '.',
+      version: `${pkg.version}.${new Date().toISOString()}`,
       icons: [
         {
           src: path.resolve('src/assets/dbz.png'),
