@@ -6,13 +6,11 @@ import { scrollTop, scrollToElem } from './libs/dom';
 import { navigation, hero, about, group,
   philosophy, footer, partners } from './components/stateless';
 import content from './../content/data';
-import './libs/particles.conf.json';
 import 'particles.js';
 import './styles/app.scss';
 
 smoothscroll.polyfill();
 
-const $menu = $('button.hamburger');
 
 // Client side routing
 installRouter((location) => {
@@ -51,7 +49,7 @@ $(window).on('scroll', evt => {
 // Scroll to element for navigation
 const setupScrollNav = () => {
   $('header nav li a, #hero .cta').on('click', evt => {
-    $menu.removeClass('is-active');
+    $('button.hamburger').removeClass('is-active');
     $('header.topbar').removeClass('open');
     const target = '#' + evt.target.href.split('/')[3];
     scrollToElem(target);
@@ -59,8 +57,8 @@ const setupScrollNav = () => {
 }
 
 // Open/close mobile nav
-$menu.on('click', evt => {
-  $menu.toggleClass('is-active');
+$('button.hamburger').on('click', evt => {
+  $('button.hamburger').toggleClass('is-active');
   $('header.topbar').toggleClass('open');
 });
 
@@ -93,7 +91,6 @@ $(window).on('load', evt => {
   setupSlider();
   setupScrollNav();
 
-  // import(/* webpackChunkName: "company-nodes" */ './libs/nodes');
   import(/* webpackChunkName: "timeline" */ 
   'timeline/src/js/timeline').then( data => {
     $('.timeline').timeline({
