@@ -25,7 +25,7 @@ export default {
     },
     "cta": {
       "label": "Discover",
-      "link": "#about"
+      "link": "about"
     }
   },
   "about": {
