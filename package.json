@@ -11,11 +11,12 @@
   "author": "Salvatore Laisa <salvatore.laisa@bitrock.it>",
   "license": "MIT",
   "scripts": {
+    "serve": "node ./scripts/server.js",
     "start": "NODE_ENV=development webpack-dev-server --hot",
     "build:webpack": "rm -rf ./dist && NODE_ENV=production webpack",
     "ssr": "node ./scripts/ssr.js",
     "build": "npm run build:webpack && npm run ssr",
-    "deploy": "NODE_ENV=production npm run build && gh-pages -d dist",
+    "deploy": "NODE_ENV=production npm run build && npm run serve",
     "test:unit": "NODE_ENV=test ava ./test/index.js --verbose",
     "test": "npm run test:unit"
   },
@@ -47,6 +48,7 @@
     "bitquest": "1.0.0",
     "d3": "v3",
     "hamburgers": "0.9.3",
+    "http-server-pwa": "0.1.4",
     "jquery": "3.3.1",
     "lightslider": "1.1.6",
     "lit-html": "0.11.1",
