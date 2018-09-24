@@ -38,5 +38,6 @@
   "start_url": ".",
   "description": "Technological Innovation Holding Group.",
   "background_color": "#ffffff",
-  "theme_color": "#0072BC"
+  "theme_color": "#0072BC",
+  "version": "1.2.0.2018-09-24T14:55:40.616Z"
 }
