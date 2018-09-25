@@ -60,7 +60,7 @@ export default {
         "title": "Deep, Different, Disruptive.",
         "company": "Radicalbit",
         "logo": RadicalbitLogo,
-        "content": "Bitrock is a consulting and system integration company committed to offer avant-garde and innovative solutions in the field of Microservices, Reactive Platform and DevOps, with the objective to accompany and support companies along the digital transformation path. Innovation and research are the core of Bitrock. The company aims to provide reliable innovation through a completely different paradigm of projectuality, in order to understand the real needs of the clients and anticipate trends and evolutions.",
+        "content": "Radicalbit is a highly specialized software firm, founded in Milan, in 2015, focused on the design and development of Fast Data products and solutions, combining streaming technologies with Machine Learning and A.I.Radicalbit offers enterprise solutions to data intense companies in order to empower competitive advantages.Radicalbit team is an unique mix between Data Science and state - of - the - art skills and competences with a clear business vision about how the customers will benefit by adopting the innovative fast data approach.",
         "cta": {
           "label": "discover",
           "link": "https://radicalbit.io"
