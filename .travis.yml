@@ -12,14 +12,20 @@ before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
 script: npm run build
+# deploy:
+#   provider: pages
+#   local-dir: dist
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep-history: true
+#   on:
+#     branch: master
+
 deploy:
-  provider: pages
-  local-dir: dist
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
+  provider: heroku
+  app: databiz-website
+  api_key:
+    secure: $HEROKU_TOKEN
 
 notifications:
   slack: $SLACK_TOKEN
