@@ -27,8 +27,6 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: $HEROKU_TOKEN
-  run:
-    - restart
 
 notifications:
   slack: $SLACK_TOKEN
