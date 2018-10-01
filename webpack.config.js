@@ -18,7 +18,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: '[name].[hash].js',
-    chunkFilename: 'js/[name].[hash].js'
+    chunkFilename: 'js/[name].[hash].js',
+    publicPath: '/'
   },
 
   mode: isProd() ? envs.production : envs.development ,
