@@ -24,8 +24,11 @@ script: npm run build
 deploy:
   provider: heroku
   app: databiz-website
+  skip_cleanup: true
   api_key:
     secure: $HEROKU_TOKEN
+  run:
+    - restart
 
 notifications:
   slack: $SLACK_TOKEN
