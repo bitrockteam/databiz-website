@@ -3534,9 +3534,9 @@ http-proxy@^1.16.2:
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
-http-server-pwa@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/http-server-pwa/-/http-server-pwa-0.3.0.tgz#6835b0338ace10f4993b613f100f8bc0f3ed16a9"
+http-server-pwa@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/http-server-pwa/-/http-server-pwa-1.0.0.tgz#8f4756630c842c6f29b8516e75724ee1db969eef"
   dependencies:
     chalk "2.4.0"
     devcert-san "0.3.3"
