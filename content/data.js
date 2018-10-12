@@ -60,7 +60,7 @@ export default {
         "title": "Deep, Different, Disruptive.",
         "company": "Radicalbit",
         "logo": RadicalbitLogo,
-        "content": "Radicalbit is a highly specialized software firm, founded in Milan, in 2015, focused on the design and development of Fast Data products and solutions, combining streaming technologies with Machine Learning and A.I.Radicalbit offers enterprise solutions to data intense companies in order to empower competitive advantages.Radicalbit team is an unique mix between Data Science and state - of - the - art skills and competences with a clear business vision about how the customers will benefit by adopting the innovative fast data approach.",
+        "content": "Radicalbit is a highly specialized software firm, founded in Milan, in 2015, focused on the design and development of Fast Data products and solutions, combining streaming technologies with Machine Learning and A.I. Radicalbit offers enterprise solutions to data intense companies in order to empower competitive advantages. Radicalbit team is an unique mix between Data Science and state-of-the-art skills and competences with a clear business vision about how the customers will benefit by adopting the innovative fast data approach.",
         "cta": {
           "label": "discover",
           "link": "https://radicalbit.io"
@@ -73,7 +73,7 @@ export default {
     "cover": philosophyCover,
     "post": {
       "title": "Innovation delivered",
-      "content": "Databiz Group has the ambition to create a holding specialized in sustainable and reliable innovation. We aim to face the market with valuable business enabling solutions.This means working together with our customers, side by side in order to better understand their needs in depth, to propose solutions that allow the implementation of cutting-edge technological solutions, not futuristic, but which led to immediate and tangible results.Our group grows through the sum of skills, building year after year, month after month a working place where talents can find space to express their own capabilities, where personal initiative is encouraged and valued, and professional growth is ensured and boosted."
+      "content": "Databiz Group has the ambition to create a holding specialized in sustainable and reliable innovation. We aim to face the market with valuable business enabling solutions. This means working together with our customers, side by side in order to better understand their needs in depth, to propose solutions that allow the implementation of cutting-edge technological solutions, not futuristic, but which led to immediate and tangible results. Our group grows through the sum of skills, building year after year, month after month a working place where talents can find space to express their own capabilities, where personal initiative is encouraged and valued, and professional growth is ensured and boosted."
     }
   },
   "partners": {
