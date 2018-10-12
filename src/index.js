@@ -14,6 +14,10 @@ smoothscroll.polyfill();
 
 // Client side routing
 installRouter((location) => {
+  // console.log(location.pathname);
+  const page_path = location.pathname;
+  gtag('config', 'UA-127386306-1', { page_path });
+
   switch(location.pathname){
     case '/':
       scrollTop();
