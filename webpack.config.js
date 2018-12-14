@@ -43,6 +43,22 @@ module.exports = {
       filename: isProd() ? 'index.tmpl.html' : 'index.html'
     }),
 
+    // eHour
+    new HtmlWebpackPlugin({
+      template: './src/assets/ehour.html',
+      filename: './consuntivazione/index.html'
+    }),
+
+    // apriporta
+    new HtmlWebpackPlugin({
+      template: './src/assets/keyless.html',
+      filename: './apriporta/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/assets/keyless-token.html',
+      filename: './apriporta/token/index.html'
+    }),
+
     new WebpackPwaManifest({
       name: 'Databiz Group',
       short_name: 'Databiz',
