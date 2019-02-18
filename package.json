@@ -7,16 +7,21 @@
   "repository": "git@github.com:bitrockteam/databiz-website.git",
   "author": "Salvatore Laisa <salvatore.laisa@bitrock.it>",
   "contributors": [
-    "Alessandro Menini <alessandro.menini@bitrock.it>"
+    "Alessandro Menini <alessandro.menini@bitrock.it>",
+    "Matteo Gazzetta <matteo.gazzetta@bitrock.it>",
+    "Francesco Pellegrini <francesco.pellegrini@bitrock.it>"
   ],
   "license": "MIT",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "devDependencies": {
-    
+    "gh-pages": "2.0.1",
+    "node-sass": "4.11.0",
+    "sass-loader": "7.1.0"
   },
   "dependencies": {
-    
+    "@vuepress/plugin-back-to-top": "1.0.0-alpha.0",
+    "@vuepress/plugin-google-analytics": "1.0.0-alpha.0",
+    "@vuepress/plugin-pwa": "1.0.0-alpha.0",
+    "vuepress": "1.0.0-alpha.39"
   }
 }
