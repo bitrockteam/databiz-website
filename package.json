@@ -12,7 +12,14 @@
     "Francesco Pellegrini <francesco.pellegrini@bitrock.it>"
   ],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "NODE_ENV=development vuepress dev ./src",
+    "build:static": "vuepress build ./src -d ./dist",
+    "build:clean": "rm -rf ./dist",
+    "build:cname": "cp ./src/CNAME ./dist/CNAME",
+    "build": "npm run build:clean && npm run build:static && npm run build:cname",
+    "gh:pages": "gh-pages -d dist"
+  },
   "devDependencies": {
     "gh-pages": "2.0.1",
     "node-sass": "4.11.0",

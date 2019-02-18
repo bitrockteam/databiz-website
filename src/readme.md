@@ -1,0 +1,16 @@
+---
+home: true
+# heroImage: /logo.svg
+heroText: We have evolved
+tagline: to face the future
+actionText: Discover
+actionLink: /about
+# features:
+# - title: User-centered
+#   details: Designed for the end users with best practices and real world scenarios in mind.
+# - title: Visual guidelines
+#   details: A living document that contains all of our visual assets aimed to help you work faster and thoughtfulness.
+# - title: Components
+#   details: A library of standards based components that solves the most common UI/UX behaviors.
+footer: "Copyright 2019 Databiz Group s.r.l - Partita IVA/C.F. : 04268680263"
+---
