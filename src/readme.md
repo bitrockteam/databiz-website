@@ -1,8 +1,9 @@
 ---
 home: true
 
-heroText: We have evolved
-tagline: to face the future
+intro:
+  - title: We have evolved
+    tagline: to face the future
 
 cta:
   - text: Discover

@@ -2,7 +2,39 @@
   <section id="hero">
     <div id="particles"></div>
     <div class="wrapper">
-      
+      <article>
+        <header>
+          <div class="claim">
+            <h2>{{ intro.title }}</h2>
+            <h3>{{ intro.tagline }}</h3>
+          </div>
+          <a class="cta" :href="cta.link">
+            {{ cta.text }}
+          </a>
+        </header>
+        <figure>
+          <img src="/logos/HeroBubbles.svg" alt="Databiz Group">
+        </figure>
+      </article>
     </div>
   </section>
 </template>
+
+<script>
+import 'particles.js';
+
+export default {
+  props: {
+    intro: {
+      type: Object
+    },
+    cta: {
+      type: Object
+    }
+  },
+  created () {
+    particlesJS.load('particles', './particles.json');
+  }
+}
+</script>
+

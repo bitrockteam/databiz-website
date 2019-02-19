@@ -10,6 +10,17 @@ module.exports = {
       { text: 'Partners', link: '/partners' },
       { text: 'Contact', link: '/contact' },
     ]
-  }
-  // plugins: ['@vuepress/pwa']
+  },
+
+  plugins: [
+    ['@vuepress/google-analytics', {
+      'ga': 'UA-127386306-1'
+    }],
+    // '@vuepress/back-to-top',
+    ['@vuepress/pwa', {
+      'serviceWorker': true,
+      // 'popupComponent': 'UpdatePopup',
+      'updatePopup': true,
+    }]
+  ]
 }

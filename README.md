@@ -1,8 +1,10 @@
 # databiz-website
 
-![./src/assets/logos/DatabizLogo.svg](./src/assets/logos/DatabizLogo.svg)
+![./src/assets/logos/DatabizLogo.svg](./src/.vuepress/public/logos/DatabizLogo.svg)
 
 [![Build Status](https://travis-ci.org/bitrockteam/databiz-website.svg?branch=master)](https://travis-ci.org/bitrockteam/databiz-website)
+
+This website is a [VuePress](https://vuepress.vuejs.org) instance with a custom monopage-theme applied on it, you can read the official documentation to learn how to edit contents or how the theme works.
 
 ## Requisites
 You need the following software installed in your machine in order to get started:
@@ -32,7 +34,7 @@ $ yarn start
 This project follows a simple branching policy:
 
 * `master` contains only stable code, and should not be updated directly
-* `development` where evolutive or experimental code is written
+<!-- * `development` where evolutive or experimental code is written -->
 * `gh-pages` where the distrubutable static files are deployed
 
 Do **NOT** merge directly `development` into `master` (*it's admin-locked...*), always send a PR to have a review.

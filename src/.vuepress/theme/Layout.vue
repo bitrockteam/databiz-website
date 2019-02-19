@@ -3,10 +3,10 @@
     <Content/>
 
     <Header />
-    <Hero />
+    <Hero :cta="data.cta[0]" :intro="data.intro[0]" />
     <About />
     <Philosophy />
-    <Partners />
+    <Partners :data="data.partners" />
     <Footer />
     <Credits :text="data.footer" />  
   </div>
