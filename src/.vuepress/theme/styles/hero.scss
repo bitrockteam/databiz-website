@@ -1,0 +1,66 @@
+
+#hero {
+  path.link {
+    fill: none;
+    stroke-width: 1px;
+  }
+  text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em !important;
+    font-weight: lighter;
+    text-shadow: 0 1px 0 #efefef, 1px 0 0 #efefef, 0 -1px 0 #efefef, -1px 0 0 #efefef;
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  header {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    height: auto;
+    padding: 0 1em;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin: .5em 0;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+  }
+  h2,
+  h3 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 0;
+  }
+  image{
+    background: -moz-radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%,rgba(255,255,255,0) 100%);
+    background: radial-gradient(ellipse at center, rgba(239,239,239,1) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#00ffffff',GradientType=1 );
+  }
+  .bitrock {
+    fill: #e37639;
+  }
+  .databiz {
+    fill: #889097;
+  }
+  .radicalbit {
+    fill: #72b2df;
+  }
+  
+}
+
+@media (max-width:480px) {
+  #hero {
+    text {
+      font-size: 1.5em;
+    }
+    image {
+      width: 70%;
+      height: auto;
+    }
+  }
+}

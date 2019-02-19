@@ -1,0 +1,283 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+header, 
+.corporate, 
+.partners {
+  ul {
+    @extend %unstyledList;
+  }
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body {
+  background: $background;
+}
+
+body > section:nth-child(2n + 1) {
+  background-color: $white;
+}
+
+header.topbar {
+  transition: all 250ms ease;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $topBar;
+  line-height: $topBar;
+  background-color: transparent;
+  overflow: hidden;
+
+  button.hamburger {
+    outline: none;
+    position: fixed;
+    right: 30px;
+    top: -8px;
+    font-size: 26px;
+    color: $lightGrey;
+    // transition: all 1s ease;
+    cursor: pointer;
+  }
+
+  &.open {
+    height: 100% !important;
+    background-color: $white;
+    // box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0;
+  }
+
+  &.sticky {
+    $h: $topBar - 30;
+    height: $h;
+    line-height: $h;
+    // box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1), inset 0 -1px 0 0 #dadce0;
+    background-color: $white;
+    border-bottom: 1px solid #eeeeee;
+
+    button.hamburger {
+      top: -12px;
+    }
+  }
+
+  nav {
+    ul {
+      margin-top: 30px;
+
+      li {
+        text-align: center;
+        font-size: 24px;
+        line-height: 90px;
+      }
+    }
+  }
+
+  figure {
+    width: 165px;
+    margin: 0 0 0 30px;
+
+    img {
+      vertical-align: middle;
+      cursor: pointer;
+      max-height: 40px;
+    }
+  }
+}
+
+#timeline {
+  padding-top: 30px;
+}
+
+section {
+  article {
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+section, footer {
+  div.wrapper {
+    padding: 45px 30px; 
+  }
+}
+
+#group {
+  article {
+    div:nth-child(3) {
+      margin-top: 45px;
+    }
+  }
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+    div.wrapper {
+      padding: 0 30px;
+    }
+
+  header {
+    max-height: 100%;
+    max-width: calc(100% - 60px);
+    z-index: 3;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 30px;
+      color: $black;
+      margin: 0;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 60px;
+      letter-spacing: 1.5px;
+      color: #4A4A4A;
+      margin: 0;
+    }
+
+    .claim {
+      position: absolute;
+      top: calc(90px + 5%);
+    }
+
+    a.cta {
+      position: absolute;
+      bottom: 60px;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: calc(100% - 60px) !important;
+    }
+  }
+
+  figure {
+    z-index: 2;
+
+    img {
+      max-height: 75vh;
+      max-width: calc(100vw - 120px);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding-top: 60px;
+    }
+  }
+}
+
+#slider {
+  li {
+    text-align: center;
+
+    img {
+      width: 100%;  
+    }
+  }
+}
+
+footer {
+  background: $lightGrey;
+  font-size: 20px;
+  line-height: 30px;
+
+  & > .wrapper {
+    article {
+      
+      text-align: center;
+
+      div {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+
+  &.credits{
+    background: $darkGrey;
+    font-size: 16px;
+    color: $white;
+
+    .wrapper {
+      // padding: 50px 0;
+
+      article {
+        display: block;
+      }
+    }
+
+    figure {
+      img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 150px;
+      }
+    }
+    p{
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+a.cta {
+  margin: 0 auto;
+  text-align: center;
+  // width: 60%;
+}
+
+#hero, #hero article {
+  display: flex; // workaround
+}
+
+
+
+.lSSlideOuter .lSPager.lSpg>li a {
+  background-color: #cccccc;
+}
+
+
+
+// da inserire in '~hamburgers/_sass/hamburgers/hamburgers.scss'
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: $black;
+  border-radius: 0;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+header.topbar button.hamburger {
+  top: -12px;
+}

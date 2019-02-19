@@ -1,0 +1,20 @@
+
+@import '~normalize.css/normalize.css';
+@import '~lightslider/dist/css/lightslider.min.css';
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+@import '~timeline/src/scss/timeline.scss';
+@import './vars.scss';
+// @import './hero.scss';
+@import './typography.scss';
+@import './mobile.scss';
+@import './desktop.scss';
+
+.hero-only{
+  nav, #hero .cta, footer, section {
+    display: none;
+  }
+
+  #hero {
+    display: block;
+  }
+}
