@@ -1,9 +1,9 @@
 <template>
   <div class="theme-container">
-    <Content/>
+    <!-- <Content/> -->
 
     <Header />
-    <Hero :cta="data.cta[0]" :intro="data.intro[0]" />
+    <Hero :cta="cta" :intro="intro" />
     <About />
     <Philosophy />
     <Partners :data="data.partners" />
@@ -34,6 +34,18 @@ export default {
     Credits
   },
   computed: {
+    intro () {
+      return {
+        title: this.$page.frontmatter.claim,
+        tagline: this.$page.frontmatter.tagline
+      }
+    },
+    cta () {
+      return {
+        link: this.$page.frontmatter.ctaLink,
+        text: this.$page.frontmatter.ctaText
+      }
+    },
     data () {
       return this.$page.frontmatter
     }

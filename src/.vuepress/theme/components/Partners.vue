@@ -21,9 +21,7 @@
 </template>
 
 <script>
-import $ from 'jquery'
-
-window.jQuery = $;
+import $ from 'jquery';
 
 export default {
   props: {
@@ -31,16 +29,20 @@ export default {
       type: Array,
     }
   },
-  created () {
-    const items = window.innerWidth < 992 ? 1 : 2; 
+  mounted () {
+    if (window) {
+      const items = window.innerWidth < 992 ? 1 : 2;
+      window.jQuery = $;
 
-    import(/* webpackChunkName: "lightslider" */ 'lightslider').then(data => 
-      $("#slider").lightSlider({
-        item: items,
-        auto: true,
-        loop: true
-      })
-    );
+      import(/* webpackChunkName: "lightslider" */ 'lightslider')
+        .then(data => 
+          $("#slider").lightSlider({
+            item: items,
+            auto: true,
+            loop: true
+          })
+        );
+    }
   }
 }
 </script>

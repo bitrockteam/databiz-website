@@ -1,13 +1,11 @@
 ---
 home: true
 
-intro:
-  - title: We have evolved
-    tagline: to face the future
+claim: We have evolved
+tagline: to face the future
 
-cta:
-  - text: Discover
-    link: /about
+ctaText: Discover
+ctaLink: /about
 
 timeline:
 - year: 2009

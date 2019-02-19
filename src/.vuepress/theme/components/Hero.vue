@@ -21,8 +21,6 @@
 </template>
 
 <script>
-import 'particles.js';
-
 export default {
   props: {
     intro: {
@@ -32,8 +30,9 @@ export default {
       type: Object
     }
   },
-  created () {
-    particlesJS.load('particles', './particles.json');
+  mounted () {
+    import(/* webpackChunkName: "particles" */ 'particles.js')
+      .then(data => particlesJS.load('particles', './particles.json'));
   }
 }
 </script>
