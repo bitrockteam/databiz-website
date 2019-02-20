@@ -1,0 +1,9 @@
+{
+  "name": "Databiz Group",
+  "short_name": "Dataabiz",
+  "theme_color": "#0072bc",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

@@ -13,7 +13,9 @@ module.exports = {
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/logos/dbz.png' }]
+    ['link', { rel: 'icon', href: '/logos/dbz.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#0072bc' }]
   ],
 
   plugins: [

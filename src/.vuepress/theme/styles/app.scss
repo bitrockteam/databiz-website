@@ -9,6 +9,10 @@
 @import './mobile.scss';
 @import './desktop.scss';
 
+a.header-anchor {
+  display: none;
+}
+
 .hero-only{
   nav, #hero .cta, footer, section {
     display: none;

@@ -4,8 +4,12 @@
 
     <Header />
     <Hero :cta="cta" :intro="intro" />
-    <About />
-    <Philosophy />
+    <About 
+      :content="getPage('/about/')"
+      :timeline="data.timeline"
+    />
+    <Group />
+    <Philosophy :content="getPage('/philosophy/')" />
     <Partners :data="data.partners" />
     <Footer />
     <Credits :text="data.footer" />  
@@ -32,6 +36,12 @@ export default {
     Partners,
     Footer,
     Credits
+  },
+  methods: {
+    getPage (slug) {
+      const request = this.$site.pages.filter(e => e.path === slug);
+      return request[0] || {};
+    }
   },
   computed: {
     intro () {
