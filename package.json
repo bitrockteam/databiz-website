@@ -17,7 +17,11 @@
     "build:static": "vuepress build ./src -d ./dist",
     "build:clean": "rm -rf ./dist",
     "build:cname": "cp ./src/CNAME ./dist/CNAME",
-    "build": "npm run build:clean && npm run build:static && npm run build:cname",
+    "build:404": "rm ./dist/404.html && cp ./dist/index.html ./dist/404.html",
+    "build:single": "rm -rf ./dist/about ./dist/group ./dist/philosophy",
+    "build:start": "npm run build:clean && npm run build:static",
+    "build:refine": "npm run build:404 && npm run build:single",
+    "build": "npm run build:start && npm run build:refine && npm run build:cname",
     "gh:pages": "gh-pages -d dist"
   },
   "devDependencies": {

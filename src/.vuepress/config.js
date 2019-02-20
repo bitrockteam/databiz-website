@@ -12,7 +12,9 @@ module.exports = {
     ]
   },
 
-  head: [],
+  head: [
+    ['link', { rel: 'icon', href: '/logos/dbz.png' }]
+  ],
 
   plugins: [
     ['@vuepress/google-analytics', {
