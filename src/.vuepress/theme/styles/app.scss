@@ -13,6 +13,10 @@ a.header-anchor {
   display: none;
 }
 
+svg.go-to-top {
+  color: $primary !important;
+}
+
 .hero-only{
   nav, #hero .cta, footer, section {
     display: none;

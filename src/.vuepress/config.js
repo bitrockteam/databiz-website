@@ -8,7 +8,7 @@ module.exports = {
       { text: 'Group', link: '/group' },
       { text: 'Philosophy', link: '/philosophy' },
       { text: 'Partners', link: '/partners' },
-      { text: 'Contact', link: '/contact' },
+      { text: 'Contact', link: '/contact/' },
     ]
   },
 
@@ -22,7 +22,7 @@ module.exports = {
     ['@vuepress/google-analytics', {
       'ga': 'UA-127386306-1'
     }],
-    // '@vuepress/back-to-top',
+    '@vuepress/back-to-top',
     ['@vuepress/pwa', {
       'serviceWorker': true,
       // 'popupComponent': 'UpdatePopup',

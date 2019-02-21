@@ -23,6 +23,8 @@ timeline:
 - year: 2018
   text: Databiz becomes a holding (Databiz Group)
 
+group: Our identity
+
 partners:
   - name: Confluent
     logo: /partners/logo-confluent.png

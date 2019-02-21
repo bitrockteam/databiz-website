@@ -1,14 +1,15 @@
 <template>
   <div class="theme-container">
-    <!-- <Content/> -->
-
     <Header />
     <Hero :cta="cta" :intro="intro" />
     <About 
       :content="getPage('/about/')"
       :timeline="data.timeline"
     />
-    <Group />
+    <Group 
+      :companies="companies"
+      :title="data.group"
+    />
     <Philosophy :content="getPage('/philosophy/')" />
     <Partners :data="data.partners" />
     <Footer />
@@ -44,6 +45,9 @@ export default {
     }
   },
   computed: {
+    data () {
+      return this.$page.frontmatter
+    },
     intro () {
       return {
         title: this.$page.frontmatter.claim,
@@ -56,9 +60,15 @@ export default {
         text: this.$page.frontmatter.ctaText
       }
     },
-    data () {
-      return this.$page.frontmatter
+    companies () {
+      return [
+        this.getPage('/group/bitrock/'),
+        this.getPage('/group/radicalbit/'),
+      ]
     }
+  },
+  mounted () {
+    import(/* webpackChunkName: "dom" */ './libs/dom.js');
   }
 }
 

@@ -870,17 +870,17 @@
   dependencies:
     lodash.throttle "^4.1.1"
 
-"@vuepress/plugin-back-to-top@1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.0-alpha.0.tgz#401513b39d5dd081f49404c35ab6f51002c1cca0"
-  integrity sha512-Ll7AdL/Lnnqft73NVJlnlZQeWurJ4U6dfeBsbcJjnywrldQ3M4nVdXWxXVCpMOILxpIuzEPhS60sudk93rVtgQ==
+"@vuepress/plugin-back-to-top@1.0.0-alpha.39":
+  version "1.0.0-alpha.39"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.0-alpha.39.tgz#bc14f2464894da6e468c4be7ab71583391c5fcb4"
+  integrity sha512-61PWnOhZ6pD8l88h7ybIxzOYVAcK3Y8j2md6bHtRRCu2EO+/+y2gdIFHVpeBOhxCkCbVPqq9m8HsKX8tF4CA8A==
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-google-analytics@1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.0.0-alpha.0.tgz#97acb3a512dca9b2b6e4014fa2d58da38e2a01b9"
-  integrity sha512-WNUIayJFBmTb06bjvFeJd5TlT4qoYcCLN15zkEGeAGH8tCH2BtrwMkSG3BiiWSh3xRUy7kDHhsuclSZcRY08EQ==
+"@vuepress/plugin-google-analytics@1.0.0-alpha.39":
+  version "1.0.0-alpha.39"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.0.0-alpha.39.tgz#5f9e6df22814554305600b5ebb9f429d9fc5ac85"
+  integrity sha512-is5Yo34xDO+711L5RJB1o67av1MgF3ZxEJN3QMOXv2zdgAL7e9DonOzAc5nsBreSCi1LaSCzXtSotrXWRG8yGg==
 
 "@vuepress/plugin-last-updated@^1.0.0-alpha.39":
   version "1.0.0-alpha.39"
@@ -896,12 +896,12 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pwa@1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.0.0-alpha.0.tgz#6726f6ae2ec4e30f72f5583d42f6f9c79711180e"
-  integrity sha512-xPaqjsTMTyVZj94J7OavhydY7nhkQk3R6MB7vN57Jd/cj/YGnI7vItjcsWpiqA+94UTMBBRaHe0bN81ju+SQ/g==
+"@vuepress/plugin-pwa@1.0.0-alpha.39":
+  version "1.0.0-alpha.39"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.0.0-alpha.39.tgz#3b36bc6d452109b1cd824464b56742d512daa99a"
+  integrity sha512-byTPyjUJ9IE4Nq98AsE1kVnv+1gHhgyeG3c/sYcmoug52QJkqR0I5VkbOSYdi50DkaPH8HpzrDa78+4jbakWOw==
   dependencies:
-    "@vuepress/shared-utils" "^1.0.0-alpha.0"
+    "@vuepress/shared-utils" "^1.0.0-alpha.39"
     register-service-worker "^1.5.2"
     workbox-build "^3.1.0"
 
@@ -916,17 +916,6 @@
   version "1.0.0-alpha.39"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.0.0-alpha.39.tgz#0101bb645866a5c40d669db969cdf7c622c076bf"
   integrity sha512-73eKmLoJSp2wKDpzLEC/+8jSriQQ2TwjtPzDa5LZDIBrWCPXM9g1r7bqDE8iP/nq94N7sl+DbfTpNqjHGkna7A==
-
-"@vuepress/shared-utils@^1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.0.0-alpha.0.tgz#9bc363bfa01c0474f222e8420be53886469a5cf8"
-  integrity sha512-jCuwcNwRki8KHaXxuxlGAPuTzeGvgxgb7lm4qHEYp/1YX+2uYi7S4xGFtjMPfpAj2dFAA2n55tG7xvRebST/Tw==
-  dependencies:
-    chalk "^2.3.2"
-    escape-html "^1.0.3"
-    fs-extra "^5.0.0"
-    globby "^8.0.1"
-    hash-sum "^1.0.2"
 
 "@vuepress/shared-utils@^1.0.0-alpha.39":
   version "1.0.0-alpha.39"
@@ -6133,6 +6122,11 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
   integrity sha1-wNWmOycYgArY4esPpSachN1BhF4=
+
+pwa-helpers@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/pwa-helpers/-/pwa-helpers-0.9.1.tgz#9ea22fa1996ab97df73b276cae962621c3fd2532"
+  integrity sha512-4sP/C9sSxQ3w80AATmvCEI3R+MHzCwr2RSZEbLyMkeJgV3cRk7ySZRUrQnBDSA7A0/z6dkYtjuXlkhN1ZFw3iA==
 
 q@^1.1.2:
   version "1.5.1"
