@@ -29,7 +29,7 @@
 export default {
   computed: {
     items () {
-      return this.$themeConfig.nav
+      return this.$themeConfig.nav || []
     }
   }
 }

@@ -35,22 +35,4 @@ if (window) {
     condition ? nav.addClass('sticky') : nav.removeClass('sticky');
   });
 
-  // Add client side routing
-  import(/* webpackChunkName: "router" */ 'pwa-helpers/router')
-    .then(data => data.installRouter)
-    .then(installRouter => installRouter((location) => {
-      switch (location.pathname) {
-        case '/':
-          window.scroll({
-            top: 0,
-            left: 0,
-            behavior
-          });
-          break;
-        case '/hero':
-          document.body.classList.add('hero-only');
-          break;
-      }
-    }));
-
 }

@@ -24,15 +24,21 @@
 export default {
   props: {
     intro: {
-      type: Object
+      type: Object,
+      default: function () {
+        return { title: '', tagline: '' }
+      }
     },
     cta: {
-      type: Object
+      type: Object,
+      default: function () {
+        return { link: '', text: '' }
+      }
     }
   },
   mounted () {
     import(/* webpackChunkName: "particles" */ 'particles.js')
-      .then(data => particlesJS.load('particles', './particles.json'));
+      .then(data => particlesJS.load('particles', '/particles.json'));
   }
 }
 </script>
