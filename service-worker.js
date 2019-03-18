@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "dbdc0521c8fbb1edfe201fe928c1daff"
+    "revision": "1525426f2a4271fa85fa84387c9a84b5"
   },
   {
     "url": "about/index.html",
-    "revision": "be81da90408bd014defae3747bbb2422"
+    "revision": "c1e772145091bd98bcbb5786dfdb69b7"
   },
   {
     "url": "apriporta/index.html",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "revision": "6ccd7b1d847e5ac3749391dbeae32884"
   },
   {
-    "url": "assets/js/app.a60923aa.js",
-    "revision": "c34984c628045122ab0e93cdfa3d1bd2"
+    "url": "assets/js/app.5002652b.js",
+    "revision": "e695a8521fd25d1d7868c36e9191106b"
   },
   {
     "url": "assets/js/dom.1b5f5b11.js",
@@ -113,15 +113,15 @@ self.__precacheManifest = [
   },
   {
     "url": "group/bitrock/index.html",
-    "revision": "0317379f018ef3caa97d8fe2d783df2e"
+    "revision": "ca00bfe3f801c452ff017dfaca2572e6"
   },
   {
     "url": "group/radicalbit/index.html",
-    "revision": "181be94840d2dd7168f2026d6215008c"
+    "revision": "841011e45acc711a9e41446fed4663f2"
   },
   {
     "url": "hero/index.html",
-    "revision": "4d8476e285ff629ad099c59bec3021a2"
+    "revision": "942a209a1a8082b32533b8bd21112f50"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -165,7 +165,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a5722e3cb42389ebe7201aec4eb1468a"
+    "revision": "4ebd79b74fce808123ad882efaee6dbf"
   },
   {
     "url": "logos/BitrockLogo.svg",
@@ -217,7 +217,7 @@ self.__precacheManifest = [
   },
   {
     "url": "philosophy/index.html",
-    "revision": "6d4537746504bac2cc5a71bf6f3ffcd2"
+    "revision": "e4d3fc51f9a0d46f15c4532768c57275"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
