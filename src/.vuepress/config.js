@@ -14,7 +14,7 @@ module.exports = {
 
   head: [
     ['link', { rel: 'icon', href: '/logos/dbz.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'manifest', href: '/app.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#0072bc' }]
   ],
 
