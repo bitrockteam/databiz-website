@@ -1,5 +1,5 @@
 ---
-title: We are group
+title: We are a group
 image: /img/img-about.jpg
 ---
 
