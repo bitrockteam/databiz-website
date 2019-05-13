@@ -6,8 +6,9 @@
           <img src="/logos/DatabizLogo.white.svg" alt="Databiz Group">
         </figure>
       
-        <p>Copyright <span class="year">{{ year }}</span> 
-          {{ text }}</p>
+        <p>{{ text }}</p>
+        <!--  <span class="year">{{ year }}</span>  -->
+          
       </article>
     </div>
   </footer>
