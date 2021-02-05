@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "aa2be708882db6e646c47814ec056ee9"
+    "revision": "9340e6a5fc6d8511573ce51a1a28ae5c"
   },
   {
     "url": "about/index.html",
-    "revision": "e2fdac80e2e709b3014044c70f9298b0"
+    "revision": "dd149c123317c2cb563a10d158a5e25e"
   },
   {
     "url": "apriporta/index.html",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "revision": "f3b27bb74e44a7debc77d2f889f5ad71"
   },
   {
-    "url": "assets/js/6.23ec5138.js",
-    "revision": "a1de577e5411409dfbcb04efe698635a"
+    "url": "assets/js/6.4c22a974.js",
+    "revision": "f61013a98cfbabe362e6808b96e5de6f"
   },
   {
     "url": "assets/js/7.16140b34.js",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "revision": "6ccd7b1d847e5ac3749391dbeae32884"
   },
   {
-    "url": "assets/js/app.83451e3f.js",
-    "revision": "bbc56413190904e8bb9d6384ca5c25a0"
+    "url": "assets/js/app.2b824b7e.js",
+    "revision": "1978cc59be85942e6574ea597010a064"
   },
   {
     "url": "assets/js/dom.aec5bb58.js",
@@ -113,15 +113,15 @@ self.__precacheManifest = [
   },
   {
     "url": "group/bitrock/index.html",
-    "revision": "4a8d792ecf3f8a38858cc81823b8f045"
+    "revision": "5bd6441da04c24aed93de5a9a1a55587"
   },
   {
     "url": "group/radicalbit/index.html",
-    "revision": "c80c2f482c1997af747b3cb3c2ef9e33"
+    "revision": "8978c896d3594da80e255fd6253744c2"
   },
   {
     "url": "hero/index.html",
-    "revision": "cea76ddbf48010ef67edbfa547698302"
+    "revision": "1ebf0e5a41494b1a196377abe94bcf0c"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -165,7 +165,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "92c4dc08f24157a50b3596dc7bc8ed5a"
+    "revision": "57ca5507eb1eef944e681900d9445094"
   },
   {
     "url": "logos/BitrockLogo.svg",
@@ -217,7 +217,7 @@ self.__precacheManifest = [
   },
   {
     "url": "philosophy/index.html",
-    "revision": "51b5bd28d00394214a4a724fca775031"
+    "revision": "fa22a1ac09cbea555c81f25f0475e861"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
