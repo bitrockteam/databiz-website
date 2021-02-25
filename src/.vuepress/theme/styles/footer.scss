@@ -1,0 +1,11 @@
+footer {
+    padding: 49px var(--side-margin) 65px;
+    background-color: var(--background-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .copyright--notice {
+        font-size: var(--footer-text-size);
+    }
+}

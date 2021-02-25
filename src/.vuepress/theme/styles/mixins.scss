@@ -1,9 +1,9 @@
-
-%unstyledList {
-  margin: 0;
-  padding: 0;
-
-  li {
-    list-style: none;
-  }
+@mixin bold--font {
+  font-weight: 700;
+}
+@mixin regular--font {
+  font-weight: 300;
+}
+@mixin hero--font {
+  font-family: 'Raleway', sans-serif;
 }

@@ -1,37 +1,23 @@
 <template>
-  <header class="topbar">
-    <div class="wrapper">
-      <figure>
-        <a href="/">
-          <img 
-            src="/logos/DatabizLogo.svg"
-            alt="Databiz Group"
-          >
-        </a>
-      </figure>
-      <nav>
-        <ul>
-          <li v-for="item in items">
-            <a :href="item.link">{{ item.text }}</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="hamburger hamburger--spin" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
+  <header class="header--bar">
+    <div id="particles-wrapper" class="particles--wrapper"></div>
+    <h1><span class="bold--font">DATABIZ GROUP</span> HAS BECOME <span class="bold--font">FORTITUDE GROUP</span></h1>
+    <svg height="2" width="100%">
+      <line x1="0" y1="0" x2="100%" y2="0" />
+    </svg>
+    <h2>STARTING JANUARY 2021</h2>
   </header>
 </template>
 
 <script>
 export default {
-  computed: {
-    items () {
-      return this.$themeConfig.nav || []
-    }
+  mounted () {
+    import(/* webpackChunkName: "particles" */ 'particles.js')
+      .then(data => particlesJS.load('particles-wrapper', '/particles.json'));
   }
 }
 </script>
+
+
+
 

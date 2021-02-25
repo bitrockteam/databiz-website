@@ -1,28 +1,10 @@
 
-@import '~normalize.css/normalize.css';
-@import '~lightslider/dist/css/lightslider.min.css';
-@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
-@import '~timeline/src/scss/timeline.scss';
 @import './vars.scss';
-// @import './hero.scss';
+@import './reset.scss';
+@import './mixins.scss';
 @import './typography.scss';
-@import './mobile.scss';
-@import './desktop.scss';
-
-a.header-anchor {
-  display: none;
-}
-
-svg.go-to-top {
-  color: $primary !important;
-}
-
-.hero-only{
-  nav, #hero .cta, footer, section {
-    display: none;
-  }
-
-  #hero {
-    display: block;
-  }
-}
+@import './header.scss';
+@import './main.scss';
+@import './image-section.scss';
+@import './footer.scss';
+@import './cookie-notice.scss';

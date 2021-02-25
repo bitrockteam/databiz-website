@@ -1,0 +1,33 @@
+.header--bar {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: var(--background-grey);
+    height: 150px;
+    padding: 6px var(--side-margin);
+
+    #particles-wrapper canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    svg {
+        margin: 10px 0;
+        width: 200px;
+
+        @media (min-width: $bp-tiny) {
+            width: 220px;
+        }
+
+        @media (min-width: $bp-small) {
+            width: 284px;
+        }
+        line {
+            stroke-width: 2px;
+            stroke: black; 
+        }
+    }
+}

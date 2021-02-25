@@ -1,0 +1,66 @@
+.main--wrapper {
+    display: flex;
+    width: calc(min(100%, 700px));
+    margin: 2.5em 0;
+    padding: 0 var(--side-margin);
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $bp-medium) {
+        margin: 4.18em auto 4.93em;
+        padding: 0;
+    }
+
+    .companies--wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .main--text {
+        display: flex;
+        font-size: 1.125em;
+        flex-direction: column;
+        align-items: center;
+        margin: 2.5em 0 1.5em;
+
+        @media (min-width: $bp-medium) {
+            margin: 3.37em 0 1.5em;
+        }
+
+        .text--title {
+            text-align: center;
+        }
+
+        p {
+            font-size: var(--copy-size);
+            white-space: pre-line;
+            text-align: center;
+        }
+    }
+
+    .company-logo {
+        &.databiz {
+            width: 171px;
+
+            @media (min-width: $bp-small) {
+                width: 210px;
+            }
+            
+            @media (min-width: $bp-medium) {
+                width: 288px;
+            }
+        }
+        &.fortitude {
+            width: 100px;
+
+            @media (min-width: $bp-small) {
+                width: 124px;
+            }
+
+            @media (min-width: $bp-medium) {
+                width: 171px;
+            }
+        }
+    }
+}
