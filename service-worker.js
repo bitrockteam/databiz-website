@@ -21,11 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9340e6a5fc6d8511573ce51a1a28ae5c"
-  },
-  {
-    "url": "about/index.html",
-    "revision": "dd149c123317c2cb563a10d158a5e25e"
+    "revision": "25a09a649522cdb05256c0d2f49962af"
   },
   {
     "url": "apriporta/index.html",
@@ -36,92 +32,40 @@ self.__precacheManifest = [
     "revision": "620b590b3f0fb5b07b0267cb181fc52a"
   },
   {
-    "url": "assets/css/0.styles.5b656ff1.css",
-    "revision": "53bce801510fd27b495f392043896fa8"
+    "url": "assets/css/0.styles.fd0b5982.css",
+    "revision": "69685af1c26c1fdfd46e93d0964f04d1"
   },
   {
-    "url": "assets/js/10.8ea8cb0f.js",
-    "revision": "1e1a5f0d183564e3d7f8e0b35020868f"
+    "url": "assets/js/3.9e037c4f.js",
+    "revision": "dbfb3cbb5bb479275afe0dc85d91ed96"
   },
   {
-    "url": "assets/js/11.56274518.js",
-    "revision": "1fc863ad263b9f5ffb0fcbaf3c59ae5f"
+    "url": "assets/js/4.0618e993.js",
+    "revision": "986b17e307b1c620c9abaae93103fd27"
   },
   {
-    "url": "assets/js/12.8af6bdf9.js",
-    "revision": "41035ccd8700b0e45181eca9058be2b1"
+    "url": "assets/js/5.506dbd5d.js",
+    "revision": "e679db5fc0c7f7d253326292fb30004d"
   },
   {
-    "url": "assets/js/13.ce097895.js",
-    "revision": "4f84300e77ad0e8470954a4befd52447"
+    "url": "assets/js/6.e38afdb8.js",
+    "revision": "81763826de17e7dd5492591f3dbe7744"
   },
   {
-    "url": "assets/js/14.42ff9adc.js",
-    "revision": "2af00229b7fbed726a9168a99ea5743b"
+    "url": "assets/js/7.6d3f3d07.js",
+    "revision": "5058fadc80980cc3061787493de9c070"
   },
   {
-    "url": "assets/js/15.c39072e6.js",
-    "revision": "8219fc9f31c421a24646d185984680e5"
+    "url": "assets/js/app.84eab42f.js",
+    "revision": "c811cf5665a5b5384eb37f2a20aa10d5"
   },
   {
-    "url": "assets/js/16.a725a483.js",
-    "revision": "8cb92fc126783a320a2b078bd27d1e00"
-  },
-  {
-    "url": "assets/js/17.7fe89ac4.js",
-    "revision": "f3b27bb74e44a7debc77d2f889f5ad71"
-  },
-  {
-    "url": "assets/js/6.4c22a974.js",
-    "revision": "f61013a98cfbabe362e6808b96e5de6f"
-  },
-  {
-    "url": "assets/js/7.16140b34.js",
-    "revision": "5326942989c592b76da501974c18c2b2"
-  },
-  {
-    "url": "assets/js/8.86adf7d7.js",
-    "revision": "fed7582651fafea1a089f97c09c3981d"
-  },
-  {
-    "url": "assets/js/9.9e5937a4.js",
-    "revision": "6ccd7b1d847e5ac3749391dbeae32884"
-  },
-  {
-    "url": "assets/js/app.2b824b7e.js",
-    "revision": "1978cc59be85942e6574ea597010a064"
-  },
-  {
-    "url": "assets/js/dom.aec5bb58.js",
-    "revision": "be334486f81a1b6300a841af6a1a1343"
-  },
-  {
-    "url": "assets/js/timeline.16ce8a6f.js",
-    "revision": "53b8ace10cf7978d56b9837bbad3eecd"
-  },
-  {
-    "url": "assets/js/vendors~lightslider.083b935e.js",
-    "revision": "a77f69f3f5606c003e5dc5648d0ff49e"
-  },
-  {
-    "url": "assets/js/vendors~particles.153f64b3.js",
-    "revision": "7a8c5c731d431ca91ff68305e7a9bcb0"
+    "url": "assets/js/vendors~particles.eab54928.js",
+    "revision": "588554ca86666d22b4c28c8bb823c684"
   },
   {
     "url": "consuntivazione/index.html",
     "revision": "e682ac825f65864c79ddf719cb2b7e2c"
-  },
-  {
-    "url": "group/bitrock/index.html",
-    "revision": "5bd6441da04c24aed93de5a9a1a55587"
-  },
-  {
-    "url": "group/radicalbit/index.html",
-    "revision": "8978c896d3594da80e255fd6253744c2"
-  },
-  {
-    "url": "hero/index.html",
-    "revision": "1ebf0e5a41494b1a196377abe94bcf0c"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -156,68 +100,32 @@ self.__precacheManifest = [
     "revision": "bbaeaae8fdf7025d0b9b917675a0ded7"
   },
   {
-    "url": "img/img-about.jpg",
-    "revision": "c127c719393181817346ea4bd58e125a"
+    "url": "img/meta-image.jpg",
+    "revision": "236234a1c5a0aab15c7d1771367d5fcf"
   },
   {
-    "url": "img/img-philosophy.jpg",
-    "revision": "0f8227a70bc3dff7868e912af6127917"
+    "url": "img/wehaveevolved-2x.jpg",
+    "revision": "6deb69cba3e7463f1872673a15e3da8e"
+  },
+  {
+    "url": "img/wehaveevolved.jpg",
+    "revision": "a41ab941d1274276c34e9ac6021a994a"
   },
   {
     "url": "index.html",
-    "revision": "57ca5507eb1eef944e681900d9445094"
-  },
-  {
-    "url": "logos/BitrockLogo.svg",
-    "revision": "fee4520569431f74cefa9b455dd96b12"
+    "revision": "0e48d5dd4eddeade7e42285c084c3d88"
   },
   {
     "url": "logos/DatabizLogo.svg",
     "revision": "52a450070c4d29e9cfae6e729eaa72e7"
   },
   {
-    "url": "logos/DatabizLogo.white.svg",
-    "revision": "acf05d09eee40606cbf990a918c13f6e"
-  },
-  {
     "url": "logos/dbz.png",
     "revision": "afdaae51a59c0bce73c8a9a7f73f084a"
   },
   {
-    "url": "logos/HeroBubbles.svg",
-    "revision": "a19f5918aee9d112ac5edd12035d1384"
-  },
-  {
-    "url": "logos/RadicalbitLogo.svg",
-    "revision": "1a4a167ffe8dc137c7e3919f5cf89dac"
-  },
-  {
-    "url": "partners/logo-cloudera.png",
-    "revision": "cca9dbd0f6d7af88e0fb556a6b79f4a9"
-  },
-  {
-    "url": "partners/logo-confluent.png",
-    "revision": "35dbf77e3faaa3b8d3d256f63ae951ad"
-  },
-  {
-    "url": "partners/logo-datastax.png",
-    "revision": "c476740446029838026df2ddd611ca35"
-  },
-  {
-    "url": "partners/logo-lightbend.png",
-    "revision": "9926086c4b4db3d2e924c627c849fcaf"
-  },
-  {
-    "url": "partners/logo-mesosphere.png",
-    "revision": "37c7188f135382641bd44d9ff1f402a2"
-  },
-  {
-    "url": "partners/logo-webtrekk.png",
-    "revision": "d1691a3a2ac38c5c3cc109e7ceea2dbb"
-  },
-  {
-    "url": "philosophy/index.html",
-    "revision": "fa22a1ac09cbea555c81f25f0475e861"
+    "url": "logos/fortitude-logo.png",
+    "revision": "8db2cd5bf671b7631cb298c02de7a5b5"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
