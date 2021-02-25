@@ -1,75 +1,25 @@
 <template>
   <div class="theme-container">
     <Header />
-    <Hero :cta="cta" :intro="intro" />
-    <About 
-      :content="getPage('/about/')"
-      :timeline="data.timeline"
-    />
-    <Group 
-      :companies="companies"
-      :title="data.group"
-    />
-    <Philosophy :content="getPage('/philosophy/')" />
-    <Partners :data="data.partners" />
+    <Main />
     <Footer />
-    <Credits :text="data.footer" />  
+    <CookieNotice />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
-import Hero from './components/Hero.vue';
-import About from './components/About.vue';
-import Group from './components/Group.vue';
-import Philosophy from './components/Philosophy.vue';
-import Partners from './components/Partners.vue';
+import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
-import Credits from './components/Credits.vue';
+import CookieNotice from './components/CookieNotice.vue';
 
 export default {
   components: {
     Header,
-    Hero,
-    About,
-    Group,
-    Philosophy,
-    Partners,
+    Main,
     Footer,
-    Credits
+    CookieNotice
   },
-  methods: {
-    getPage (slug) {
-      const request = this.$site.pages.filter(e => e.path === slug);
-      return request[0] || {};
-    }
-  },
-  computed: {
-    data () {
-      return this.$page.frontmatter
-    },
-    intro () {
-      return {
-        title: this.$page.frontmatter.claim,
-        tagline: this.$page.frontmatter.tagline
-      }
-    },
-    cta () {
-      return {
-        link: this.$page.frontmatter.ctaLink,
-        text: this.$page.frontmatter.ctaText
-      }
-    },
-    companies () {
-      return [
-        this.getPage('/group/bitrock/'),
-        this.getPage('/group/radicalbit/'),
-      ]
-    }
-  },
-  mounted () {
-    import(/* webpackChunkName: "dom" */ './libs/dom.js');
-  }
 }
 
 </script>

@@ -1,9 +1,39 @@
+$bp-tiny: 22.5em;
+$bp-small: 30em;
+$bp-medium: 43.75em;
+$bp-large: 60.25em;
+$bp-big: 75em;
 
-$primary: #0067A5;
-$white: #ffffff;
-$black: #222222;
-$background: #F8F8F8;
-$lightGrey: #cccccc;
-$darkGrey: #4A4A4A;
+:root {
+    --background-grey: #eeeeee;
+    --dark-grey: rgb(3, 3, 3);
+    --green: #2d827b;
+    --h1-size: 0.81em;
+    --h2-size: 0.81em;
+    --copy-size: 0.85em;
+    --footer-text-size: 0.66em;
 
-$topBar: 90px;
+    --side-margin: 5px;
+}
+@media screen and (min-width: $bp-tiny) {
+    :root {
+        --side-margin: 7px;
+        --h1-size: 0.9em;
+        --h2-size: 0.9em;
+    }
+}
+@media screen and (min-width: $bp-small) {
+    :root {
+        --side-margin: 10px;
+        --h1-size: 1.125em;
+        --h2-size: 1em;
+        --copy-size: 1em;
+        --footer-text-size: 0.8125em;
+    }
+}
+@media screen and (min-width: $bp-medium) {
+    :root {
+        --h1-size: 1.5em;
+        --h2-size: 1.125em;
+    }
+}
