@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "25a09a649522cdb05256c0d2f49962af"
+    "revision": "7fe57d082595b340621c4cb80b876abb"
   },
   {
     "url": "apriporta/index.html",
@@ -32,32 +32,32 @@ self.__precacheManifest = [
     "revision": "620b590b3f0fb5b07b0267cb181fc52a"
   },
   {
-    "url": "assets/css/0.styles.fd0b5982.css",
-    "revision": "69685af1c26c1fdfd46e93d0964f04d1"
+    "url": "assets/css/0.styles.159689f7.css",
+    "revision": "89e458078cb3ff0ef92c09f85b53c511"
   },
   {
     "url": "assets/js/3.9e037c4f.js",
     "revision": "dbfb3cbb5bb479275afe0dc85d91ed96"
   },
   {
-    "url": "assets/js/4.0618e993.js",
-    "revision": "986b17e307b1c620c9abaae93103fd27"
+    "url": "assets/js/4.954bb7eb.js",
+    "revision": "49b149b71226f675567b843837f43258"
   },
   {
     "url": "assets/js/5.506dbd5d.js",
     "revision": "e679db5fc0c7f7d253326292fb30004d"
   },
   {
-    "url": "assets/js/6.e38afdb8.js",
-    "revision": "81763826de17e7dd5492591f3dbe7744"
+    "url": "assets/js/6.33a4de60.js",
+    "revision": "1962085546d874eecb2a7d954d783da1"
   },
   {
     "url": "assets/js/7.6d3f3d07.js",
     "revision": "5058fadc80980cc3061787493de9c070"
   },
   {
-    "url": "assets/js/app.84eab42f.js",
-    "revision": "c811cf5665a5b5384eb37f2a20aa10d5"
+    "url": "assets/js/app.164265a0.js",
+    "revision": "f48d9821db25398c020ac1d4c12b4627"
   },
   {
     "url": "assets/js/vendors~particles.eab54928.js",
@@ -113,7 +113,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "0e48d5dd4eddeade7e42285c084c3d88"
+    "revision": "0d7926f49f8841029802ae95f920f43f"
   },
   {
     "url": "logos/DatabizLogo.svg",
