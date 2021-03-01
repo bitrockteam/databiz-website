@@ -4,6 +4,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    span {
+        display: block;
+        text-align: center;
+        
+        @media screen and (min-width: $bp-medium) {
+            display: initial;
+        }
+    }
     
     .copyright--notice {
         font-size: var(--footer-text-size);
