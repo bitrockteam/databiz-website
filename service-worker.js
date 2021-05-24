@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "25a78df4c8574d9bb272e2b129745e2b"
+    "revision": "b44e7cdb6885a2ea4f3bd369dd7b8700"
   },
   {
     "url": "apriporta/index.html",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "revision": "5058fadc80980cc3061787493de9c070"
   },
   {
-    "url": "assets/js/app.d635f6c1.js",
-    "revision": "cbd811947792c641d1a5e94d721d68b9"
+    "url": "assets/js/app.70443203.js",
+    "revision": "98239b403564fe55ac1158afe793f8b5"
   },
   {
     "url": "assets/js/vendors~particles.eab54928.js",
@@ -113,7 +113,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3e75ae4ddcd87b9a1b24d8d1ecae8fed"
+    "revision": "46b67460d70364ed69804e91b4589ac3"
   },
   {
     "url": "logos/DatabizLogo.svg",
